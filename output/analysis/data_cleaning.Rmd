@@ -93,23 +93,44 @@ msc_weight_clean %>%
 ```{r check 5 - matching spp values per block, echo = FALSE}
 # check to see there are any duplicates values within each time-stamp per block
 
-find_matches <- function(df, block_id, trt_id)  {
+get_n_spp <- function(df, block_id, trt_id, period_id) {
   
-  # grab pot id's from a given block (e.g., B1) for all sessions
-  vec <- df %>%
-    select(session, block, treatment, period, pot_id) %>%
-    filter(block == !! block_id & treatment == !! trt_id) %>%
-    arrange(pot_id) %>%
-    split(list(.$session, .$block, .$period)) %>%
-    map(function(x) pull(x, pot_id))
+  # nse  
+    block_id2  <- quo(block_id)
+    trt_id2    <- quo(trt_id)
+    period_id2 <- quo(period_id) 
+    
+  # filter
+    df2 <- df %>%
+      select(session, block, treatment, period, pot_id) %>%
+      filter(block == !! block_id2 & treatment == !! trt_id2 & period == !! period_id2) %>%
+      group_by(pot_id) %>%
+      summarise(count = n(),
+                block = block_id,
+                trt = trt_id, 
+                period = period_id) %>%
+      select(block, trt, period, pot_id, count)
   
-  # find any matching pot id's 
-  matches <- Reduce(intersect, vec)
-  
-  return(matches)
+  # return           
+    return(df2)
 }
 
-b1 <- find_matches(msc_weight_clean, quo("B1"), quo("WW")) %>% glimpse()
+bind_n_spp <- function(df, block, trt, period) {
+  
+}
+
+clean_b1_ww <- list(df = msc_weight_clean, block_id = "B1", trt_id = "WW")
+clean_b2_ww <- list(df = msc_weight_clean, block_id = "B2", trt_id = "WW")
+clean_b3_ww <- list(df = msc_weight_clean, block_id = "B3", trt_id = "WW")
+clean_b4_ww <- list(df = msc_weight_clean, block_id = "B4", trt_id = "WW")
+clean_b5_ww <- list(df = msc_weight_clean, block_id = "B5", trt_id = "WW")
+
+ls_args_ww <- list(c(clean_b1_ww, period_id = "T1"))
+                
+                
+df <- invoke_map(get_n_spp, .x = ls_args) %>%
+  bind_rows() %>%
+  arrange(desc(pot_id))
 
 ```
 

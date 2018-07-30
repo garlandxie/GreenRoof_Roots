@@ -12,17 +12,20 @@ library(magrittr)
 library(googlesheets)
 library(dplyr)
 library(purrr)
+library(here)
 ```
 
 ```{r import - weight data via googlesheets}
-# get authorization 
-gs_auth(new_user = TRUE)
 
-# register the ms_data googlesheet file
-msc_data <- gs_key("1jtiaNA2VG_fwnsMAfH-Bu1JdC0Js7Lod4JqLxoMwbek")
+import_gs <- function(key, ws_name) {
+  gs_auth(new_user = TRUE)
+  gs_data <- gs_key(key)
+  df <- gs_data %>% gs_read(ws = ws_name)
+  
+  return(df)
+}
 
-# return content of 'Weight' ws as a data frame
-msc_weight_raw <- msc_data %>% gs_read(ws = "Weight")
+msc_weight_raw <- import_gs("1jtiaNA2VG_fwnsMAfH-Bu1JdC0Js7Lod4JqLxoMwbek", "Weight")
 ```
 
 ## Data cleaning
@@ -119,21 +122,29 @@ bind_n_spp <- function(df, block, trt, period) {
   
 }
 
+
+# needs more efficient code here.
 clean_b1_ww <- list(df = msc_weight_clean, block_id = "B1", trt_id = "WW")
 clean_b2_ww <- list(df = msc_weight_clean, block_id = "B2", trt_id = "WW")
 clean_b3_ww <- list(df = msc_weight_clean, block_id = "B3", trt_id = "WW")
 clean_b4_ww <- list(df = msc_weight_clean, block_id = "B4", trt_id = "WW")
 clean_b5_ww <- list(df = msc_weight_clean, block_id = "B5", trt_id = "WW")
 
-ls_args_ww <- list(c(clean_b1_ww, period_id = "T1"))
+ls_args_ww <- list(c(clean_b1_ww, period_id = "T1"),
+                   c(clean_b1_ww, period_id = "T2"),
+                   c(clean_b1_ww, period_id = "T3"),
+                   c(clean_b1_ww, period_id = "T4"))
                 
-                
-df <- invoke_map(get_n_spp, .x = ls_args) %>%
+df <- invoke_map(get_n_spp, .x = ls_args_ww) %>%
   bind_rows() %>%
-  arrange(desc(pot_id))
+  arrange(count)
 
 ```
 
+
+## Save data!
+
+write.csv(msc_weight_clean, file = here("data/project_data/original", "weight.csv"))
 
 ## Session info
 

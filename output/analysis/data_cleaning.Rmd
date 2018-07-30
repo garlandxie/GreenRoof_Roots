@@ -17,26 +17,29 @@ library(here)
 
 ```{r import - weight data via googlesheets}
 
-import_gs <- function(key, ws_name) {
-  gs_auth(new_user = TRUE)
-  gs_data <- gs_key(key)
+# annoying that I have to authorize everytime I run this code
+# find a custom function that uses a shareable link instead
+
+import_gs <- function(url, ws_name) {
+  gs_data <- gs_url(url)
   df <- gs_data %>% gs_read(ws = ws_name)
   
   return(df)
 }
 
-msc_weight_raw <- import_gs("1jtiaNA2VG_fwnsMAfH-Bu1JdC0Js7Lod4JqLxoMwbek", "Weight")
+
+msc_weight <- import_gs("https://docs.google.com/spreadsheets/d/1jtiaNA2VG_fwnsMAfH-Bu1JdC0Js7Lod4JqLxoMwbek/edit?usp=sharing", "Weight")
 ```
 
 ## Data cleaning
 
 ```{r glimpse - weight, echo=FALSE}
-msc_weight_raw %>% glimpse()
+msc_weight %>% glimpse()
 ```
 
 ```{r cleaning - colnames, echo = FALSE}
 # rename columns 
-msc_weight_clean <- msc_weight_raw %>% 
+msc_weight %<>% 
   rename(record_date = `Recorded by`,
          scan_date   = `Scanned by (+ Date)`,
          type_date   = `Typed by (+ Date)`,
@@ -54,7 +57,7 @@ msc_weight_clean <- msc_weight_raw %>%
 
 ```{r check 1 - # blocks per session, echo = FALSE}
 # check to see if there are 5 blocks and 4 time-stamps within each session 
-msc_weight_clean %>% 
+msc_weight %>% 
   group_by(session, treatment) %>%
   summarize(n_blocks = length(unique(block))) %>%
   arrange(treatment)
@@ -63,7 +66,7 @@ msc_weight_clean %>%
 # check to see 4 time-stamps (T1, T2, T3, T4) within each block
 # per treatment per session
 
-msc_weight_clean %>% 
+msc_weight %>% 
   group_by(session, treatment, block) %>%
   summarize(n_timestamps = length(unique(period))) %>%
   arrange(treatment)
@@ -75,7 +78,7 @@ msc_weight_clean %>%
 # check to see 4 time-stamps (T1, T2, T3, T4) within each block
 # per treatment per session
 
-msc_weight_clean %>% 
+msc_weight %>% 
   group_by(session, treatment, block, period) %>%
   summarize(n_pots = length(unique(pot_id))) %>%
   arrange(treatment, desc(n_pots))
@@ -86,7 +89,7 @@ msc_weight_clean %>%
 ```{r check 4 - duplicate spp per timeperiod, echo = FALSE}
 # check to see there are any duplicates values within each time-stamp per block
 
-msc_weight_clean %>%
+msc_weight %>%
   group_by(session, block, treatment, period) %>%
   summarize(duplicates = anyDuplicated(pot_id)) %>%
   arrange(desc(duplicates))
@@ -118,27 +121,103 @@ get_n_spp <- function(df, block_id, trt_id, period_id) {
     return(df2)
 }
 
-bind_n_spp <- function(df, block, trt, period) {
-  
-}
 
+# ww
+clean_b1_ww <- list(df = msc_weight, 
+                    block_id = "B1", 
+                    trt_id = "WW")
 
-# needs more efficient code here.
-clean_b1_ww <- list(df = msc_weight_clean, block_id = "B1", trt_id = "WW")
-clean_b2_ww <- list(df = msc_weight_clean, block_id = "B2", trt_id = "WW")
-clean_b3_ww <- list(df = msc_weight_clean, block_id = "B3", trt_id = "WW")
-clean_b4_ww <- list(df = msc_weight_clean, block_id = "B4", trt_id = "WW")
-clean_b5_ww <- list(df = msc_weight_clean, block_id = "B5", trt_id = "WW")
+clean_b2_ww <- list(df = msc_weight, 
+                    block_id = "B2", 
+                    trt_id = "WW")
+
+clean_b3_ww <- list(df = msc_weight, 
+                    block_id = "B3", 
+                    trt_id = "WW")
+
+clean_b4_ww <- list(df = msc_weight, 
+                    block_id = "B4", 
+                    trt_id = "WW")
+
+clean_b5_ww <- list(df = msc_weight, 
+                    block_id = "B5", 
+                    trt_id = "WW")
+
 
 ls_args_ww <- list(c(clean_b1_ww, period_id = "T1"),
                    c(clean_b1_ww, period_id = "T2"),
                    c(clean_b1_ww, period_id = "T3"),
-                   c(clean_b1_ww, period_id = "T4"))
+                   c(clean_b1_ww, period_id = "T4"),
+                   c(clean_b2_ww, period_id = "T1"),
+                   c(clean_b2_ww, period_id = "T2"),
+                   c(clean_b2_ww, period_id = "T3"),
+                   c(clean_b2_ww, period_id = "T4"),
+                   c(clean_b3_ww, period_id = "T1"),
+                   c(clean_b3_ww, period_id = "T2"),
+                   c(clean_b3_ww, period_id = "T3"),
+                   c(clean_b3_ww, period_id = "T4"),
+                   c(clean_b4_ww, period_id = "T1"),
+                   c(clean_b4_ww, period_id = "T2"),
+                   c(clean_b4_ww, period_id = "T3"),
+                   c(clean_b5_ww, period_id = "T4"),
+                   c(clean_b5_ww, period_id = "T1"),
+                   c(clean_b5_ww, period_id = "T2"),
+                   c(clean_b5_ww, period_id = "T3"),
+                   c(clean_b5_ww, period_id = "T4"))
+
+# wd
+clean_b1_wd <- list(df = msc_weight, 
+                    block_id = "B1", 
+                    trt_id = "WD")
+
+clean_b2_wd <- list(df = msc_weight, 
+                    block_id = "B2", 
+                    trt_id = "WD")
+
+clean_b3_wd <- list(df = msc_weight, 
+                    block_id = "B3", 
+                    trt_id = "WD")
+
+clean_b4_wd <- list(df = msc_weight, 
+                    block_id = "B4", 
+                    trt_id = "WD")
+
+clean_b5_wd <- list(df = msc_weight, 
+                    block_id = "B5", 
+                    trt_id = "WD")
+
+ls_args_wd <- list(c(clean_b1_wd, period_id = "T1"),
+                   c(clean_b1_wd, period_id = "T2"),
+                   c(clean_b1_wd, period_id = "T3"),
+                   c(clean_b1_wd, period_id = "T4"),
+                   c(clean_b2_wd, period_id = "T1"),
+                   c(clean_b2_wd, period_id = "T2"),
+                   c(clean_b2_wd, period_id = "T3"),
+                   c(clean_b2_wd, period_id = "T4"),
+                   c(clean_b3_wd, period_id = "T1"),
+                   c(clean_b3_wd, period_id = "T2"),
+                   c(clean_b3_wd, period_id = "T3"),
+                   c(clean_b3_wd, period_id = "T4"),
+                   c(clean_b4_wd, period_id = "T1"),
+                   c(clean_b4_wd, period_id = "T2"),
+                   c(clean_b4_wd, period_id = "T3"),
+                   c(clean_b4_wd, period_id = "T4"),
+                   c(clean_b5_wd, period_id = "T1"),
+                   c(clean_b5_wd, period_id = "T2"),
+                   c(clean_b5_wd, period_id = "T3"),
+                   c(clean_b5_wd, period_id = "T4"))
+
 
 # piling everything into a singe df
-df <- invoke_map(get_n_spp, .x = ls_args_ww) %>%
+invoke_map(get_n_spp, .x = ls_args_ww) %>%
   bind_rows() %>%
-  arrange(count)
+  filter(count < 6 & block == "B5") %>% 
+  arrange(pot_id, count, period) 
+
+invoke_map(get_n_spp, .x = ls_args_wd) %>%
+  bind_rows() %>%
+  filter(count < 4 & block == "B5") %>% 
+  arrange(pot_id, period, count) 
 
 ```
 

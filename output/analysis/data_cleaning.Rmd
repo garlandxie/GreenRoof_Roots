@@ -1,0 +1,121 @@
+---
+title: "Msc_data_cleaning"
+author: "Garland Xie"
+date: "July 29, 2018"
+output: html_document
+---
+
+## Import 
+
+```{r import - libraries, include = TRUE}
+library(magrittr)
+library(googlesheets)
+library(dplyr)
+library(purrr)
+```
+
+```{r import - weight data via googlesheets}
+# get authorization 
+gs_auth(new_user = TRUE)
+
+# register the ms_data googlesheet file
+msc_data <- gs_key("1jtiaNA2VG_fwnsMAfH-Bu1JdC0Js7Lod4JqLxoMwbek")
+
+# return content of 'Weight' ws as a data frame
+msc_weight_raw <- msc_data %>% gs_read(ws = "Weight")
+```
+
+## Data cleaning
+
+```{r glimpse - weight, echo=FALSE}
+msc_weight_raw %>% glimpse()
+```
+
+```{r cleaning - colnames, echo = FALSE}
+# rename columns 
+msc_weight_clean <- msc_weight_raw %>% 
+  rename(record_date = `Recorded by`,
+         scan_date   = `Scanned by (+ Date)`,
+         type_date   = `Typed by (+ Date)`,
+         edit_date   = `Edited by (+Date)` ,
+         session     = Session,
+         block       = Block,
+         pot_id      = `Pot ID`,
+         treatment   = Treatment,
+         sample_date = `Sampling Date`,
+         period      = Period, 
+         weight_lbs  = `Weight (lbs)`,
+         comments    = Remarks) %>%
+  glimpse()
+```
+
+```{r check 1 - # blocks per session, echo = FALSE}
+# check to see if there are 5 blocks and 4 time-stamps within each session 
+msc_weight_clean %>% 
+  group_by(session, treatment) %>%
+  summarize(n_blocks = length(unique(block))) %>%
+  arrange(treatment)
+```
+```{r check 2 - # timestamps per block, echo = FALSE}
+# check to see 4 time-stamps (T1, T2, T3, T4) within each block
+# per treatment per session
+
+msc_weight_clean %>% 
+  group_by(session, treatment, block) %>%
+  summarize(n_timestamps = length(unique(period))) %>%
+  arrange(treatment)
+
+```
+
+
+```{r check 3 - # pots per block, echo = FALSE}
+# check to see 4 time-stamps (T1, T2, T3, T4) within each block
+# per treatment per session
+
+msc_weight_clean %>% 
+  group_by(session, treatment, block, period) %>%
+  summarize(n_pots = length(unique(pot_id))) %>%
+  arrange(treatment, desc(n_pots))
+
+```
+
+
+```{r check 4 - duplicate spp per timeperiod, echo = FALSE}
+# check to see there are any duplicates values within each time-stamp per block
+
+msc_weight_clean %>%
+  group_by(session, block, treatment, period) %>%
+  summarize(duplicates = anyDuplicated(pot_id)) %>%
+  arrange(desc(duplicates))
+```
+
+
+```{r check 5 - matching spp values per block, echo = FALSE}
+# check to see there are any duplicates values within each time-stamp per block
+
+find_matches <- function(df, block_id, trt_id)  {
+  
+  # grab pot id's from a given block (e.g., B1) for all sessions
+  vec <- df %>%
+    select(session, block, treatment, period, pot_id) %>%
+    filter(block == !! block_id & treatment == !! trt_id) %>%
+    arrange(pot_id) %>%
+    split(list(.$session, .$block, .$period)) %>%
+    map(function(x) pull(x, pot_id))
+  
+  # find any matching pot id's 
+  matches <- Reduce(intersect, vec)
+  
+  return(matches)
+}
+
+b1 <- find_matches(msc_weight_clean, quo("B1"), quo("WW")) %>% glimpse()
+
+```
+
+
+## Session info
+
+```{r session info, echo=FALSE}
+sessionInfo()
+```

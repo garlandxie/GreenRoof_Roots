@@ -134,7 +134,8 @@ ls_args_ww <- list(c(clean_b1_ww, period_id = "T1"),
                    c(clean_b1_ww, period_id = "T2"),
                    c(clean_b1_ww, period_id = "T3"),
                    c(clean_b1_ww, period_id = "T4"))
-                
+
+# piling everything into a singe df
 df <- invoke_map(get_n_spp, .x = ls_args_ww) %>%
   bind_rows() %>%
   arrange(count)

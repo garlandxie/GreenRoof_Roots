@@ -72,7 +72,26 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - monocots and herbs had the highest transpiration rates due to high RMF
 - but, mixtures with high drought-resistance and high stormwater performance is key
 
-[@Szota2017]
+[@Szota2017] Szota et al. 2017. Sci Total Env
+- selecting green roof plants has to balance both drought risk and stormwater retention
+- “around 60-80% of rainfall is lost to evapotranspiration in natural ecosystems”
+- green roofs should aim to achieve 80% rainfall lost to evapotranspiration
+- stormwater retention is caused by different engineering components in the system
+  - adding artificial components increase water retention, but adds extra weight 
+  - green roof soil tend to have high hydraulic conductivity --> free-draining
+- adding retention layers can help, but might be too heavy in some cases
+- high water-users can restore storage capacity quickly, but can suffer from drought
+  - drought avoiders - “isohydric”: tight stomatal regulation, maintain water status
+  - drought-tolerant - “anisohydric”: decrease water status; but risks hydraulic failure
+- natural ecosystems: drought-resistant plants develop extensive roots to acquire water
+- but, may not work on green roofs due to limited water 
+- some notes on methods:
+  - Used previous climatic dataset to help simulate realistic rainfall events 
+  - acquired crop coefficients as part of water balance model 
+- main findings:
+  - high crop factor (>1) increased water retention, but suffered from drought  
+  - plants with crop factors (0.6 < k < 1) with drought avoidance --> ideal for balancing stormwater retention and drought risk
+
 
 # References
 

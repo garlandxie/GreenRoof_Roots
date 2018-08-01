@@ -11,7 +11,7 @@ library(citr)
 ```
 
 # Green Roofs
-[@Lundholm2015:1] Lundholm et al. 2015. Env Sci Tech
+[@Lundholm2015:2] Lundholm et al. 2015. Env Sci Tech
 
 - plant functional can be used to streamline plant selection for green roof ecosystems
 collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) that are known for driving productivity and resource uptake
@@ -40,7 +40,26 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - belowground spatial niche complementarity 
   - partially responsible for the two ecosystem services
   - selected species have variation in their root traits 
-  - (e.g. dense and clustered fibrous roots versus rhizomes).
+  - (e.g. dense and clustered fibrous roots versus rhizomes)
+  
+[@Lundholm2015] Lundholm. 2015. Front Evo Evo   
+- ecological and evolutionary relevance of constructed ecosystems 
+  - (e.g., green roofs, constructed wetlands, bioretention filters)
+- defines constructed ecosystems “as a set of living and nonliving components”
+  - designed to provide valuable services”
+- distinctive features that separate constructed ecosystems:
+  - (1) relatively simple designs
+  - (2) small sizes
+  - (3) ecological novelty (lack of historical evolutionary select pressures)
+  - (4) the role of human design 
+- socioeconomic factors play a role in the design of constructed ecosystems
+  - such as the identity of the designer
+- ecologists can learn about community assembly from constructed ecosystems 
+  - (e.g. start simple to more complex) 
+  - no initial biological legacy to begin with
+ - evolutionary issues should exist in constructed ecosystem 
+  - due to the relatively homogeneous conditions 
+  - high levels of ecological novelty
 
 # References
 

@@ -6,7 +6,7 @@ output: html_document
 bibliography: library.bib
 ---
 
-# Green Roofs
+#Green Roofs
 [@Lundholm2015]
 
 - plant functional can be used to streamline plant selection for green roof ecosystems
@@ -19,5 +19,5 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - it appears that succulent monocultures provide the largest benefits for substrate cooling, but a poor performance in terms of stormwater capture.
 
 
-# References
+#References
 

@@ -1,0 +1,13 @@
+---
+title: "annotated_bibliography"
+author: "Garland Xie"
+date: "August 1, 2018"
+output: html_document
+bibliography: library.bib
+---
+
+# Green Roofs
+[@Lundholm2015]
+
+
+# References

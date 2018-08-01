@@ -54,10 +54,10 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - (4) the role of human design 
 - socioeconomic factors play a role in the design of constructed ecosystems
   - such as the identity of the designer
-- ecologists can learn about community assembly from constructed ecosystems 
+  - ecologists can learn about community assembly from constructed ecosystems 
   - (e.g. start simple to more complex) 
   - no initial biological legacy to begin with
- - evolutionary issues should exist in constructed ecosystem 
+- evolutionary issues should exist in constructed ecosystem 
   - due to the relatively homogeneous conditions 
   - high levels of ecological novelty
 

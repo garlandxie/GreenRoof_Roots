@@ -300,9 +300,7 @@ Tennant. 1975. J Ecol
   - then you might want to increase sample size
   - simulations show that 12 reps accounts for ~30% of experiments
 
-
-
-Poorter et al. 2012. Func Plant Bio - Does pot size matter?
+ [@Poorter2012a] Poorter et al. 2012. Func Plant Bio - Does pot size matter?
 - experiments are often conducted on plants grown in some kind of container
 - pot size seems to have received little consideration; not reported in methods
 - use of small pots in experimental biology
@@ -317,10 +315,42 @@ Poorter et al. 2012. Func Plant Bio - Does pot size matter?
 - pot size should chosen carefully during planning phase of an experiment
   - includes choosing right volume, right shape + height of pots 
 
+# Methodology: statistics
 
-
-
-
+[@Greenland2016] Greenland et al. 2016. Eur J Epidem
+- huge misuse of statistics among researchers; lead to journals banning some practices
+- solution: basic teaching of general methods needs to be improved
+- stats models - math representation that captures variability; big list of assumptions
+- things can get more complicated if assumptions aren’t met
+- models are presented in abstract forms, sometimes ignore assumptions
+- one assumption is looking at test hypothesis - zero effect (on average)
+- frequentist - “hypothetical frequencies of data patterns under assumed statistical model”
+- p-values - “observed statistical significance” for the test hypothesis
+  - “compatibility between observed data + prediction of ENTIRE statistical model”
+  - distance is measured using a test statistic (e.g., chi-squared test stat) 
+  - p-value tests all assumptions about how data were generated 
+  - note: a very small p-value does not tell us which assumption is incorrect
+  - can be viewed us a continuous measure from [0-1] (1 == perfect compatibility)
+- moving from tests to estimates: 
+  - different effect sizes for a targeted effect (point estimates)
+  - a range of sizes - 95% confidence interval (acts a summary here)
+  - interpretation: repeat 95% of CI (validly), then 95% will contain true effect size
+- important consideration of p-values
+  - p-value assumes test hypothesis is true; it’s not a hypothesis probability 
+  - a small p-value suggests unusual data (relative to test hypothesis + assumptions)
+  - a large p-value suggests data are not unusual; could be large random error
+  - p > 0.05; does not mean there are no observed differences; look a 95% CI
+  - p > 0.05 and p >= 0.05 do not mean the same thing! 
+  - only use inequalities when p-values are very very small (e.g. <0.001)
+- statistical significance: property of statistical tests, not observed phenomenon
+- use a one-sided tail test if above or below zero effect size; default is two-sided 
+- several guidelines (overall)
+  - look at p-values, effect size and confidence intervals together!
+  - carefully consider all assumptions of your statistical and experimental models
+  - statistical results could be compatible with an alternative hypothesis (see CI’s)
+  - best way to statistically evaluate multiple studies: do a meta-analysis!
+  - any opinions about certainty cannot be inferred only from statistical methods 
+  - describe full sequence of events since statistic methods have assumptions
 
 
 

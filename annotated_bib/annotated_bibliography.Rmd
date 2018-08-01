@@ -9,5 +9,14 @@ bibliography: library.bib
 # Green Roofs
 [@Lundholm2015]
 
+- plant functional can be used to streamline plant selection for green roof ecosystems
+collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) that are known for driving productivity and resource uptake
+- managed to find some links between plant traits and green roof ecosystem services using a model-averaging approach
+- some interesting findings were:
+  - stormwater capture rate: shrubs, tall forbs, and then succulents
+  - substrate cooling, there was a large variation among the grasses and shrubs,
+  - creeping shrubs had the lowest cooling performance
+- it appears that succulent monocultures provide the largest benefits for substrate cooling, but a poor performance in terms of stormwater capture.
+
 
 # References

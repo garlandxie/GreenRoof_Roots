@@ -264,12 +264,10 @@ Tennant. 1975. J Ecol
 
 # Methodology: greenhouse experiments 
 
-Poorter et al. 2012. Func Plant Bio 
+[@Poorter2012] Poorter et al. 2012. Func Plant Bio 
 - plant biologists rely on experimental setups in which plants are cultivated in labs
 - generalisations across experiments: results are replicable and reproducible
-- aim of our paper - a pragmatic guide to capture the minimum level of knowledge
-  - how to grow plants either under so-called ‘optimal conditions’ 
-  - or under conditions designed to simulate effects of abiotic stress factor
+- a pragmatic guide to capture the minimum level of knowledge of how to grow plants under "ideal" conditions
 - where to conduct the experiment?
   - experimental gardens (cheapest solution)
   - glasshouses (more expensive than gardens, but cheaper than chambers) 
@@ -295,12 +293,36 @@ Poorter et al. 2012. Func Plant Bio
   - blocks should be arranged 
   - known variation in climate conditions among blocks is maximised
   - variation among blocks is maximizesd; within block is minimized 
-  -re-arranges pots within a block to avoid edge effects 
+  - re-arranges pots within a block to avoid edge effects 
 - plant size within a population of individually grown plants 
   - does not show a normal distribution, but rather a log-normal one
 - if you want to test for both significance + magnitude
   - then you might want to increase sample size
   - simulations show that 12 reps accounts for ~30% of experiments
+
+
+
+Poorter et al. 2012. Func Plant Bio - Does pot size matter?
+- experiments are often conducted on plants grown in some kind of container
+- pot size seems to have received little consideration; not reported in methods
+- use of small pots in experimental biology
+  - suggests more experiments or increased replication
+  - but, comes with biological constraints; reduced resources + root growth
+- determine plant size-pot size relationship through a meta-analysis on 65 papers
+- plants are likely to be over 3 times larger in 2L pots than in pots of 0.2L
+- RMF decreased by a small but significant extent as pot size doubled
+- small pots have greater surface areas + heat up more quickly
+- root confinement per se may cause growth retardation
+- pot size effects are saturating when biomass:rooting voume ratio values exceed the 2g X L–1
+- pot size should chosen carefully during planning phase of an experiment
+  - includes choosing right volume, right shape + height of pots 
+
+
+
+
+
+
+
 
 # References
 

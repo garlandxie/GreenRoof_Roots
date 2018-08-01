@@ -2,7 +2,12 @@
 title: "annotated_bibliography"
 author: "Garland Xie"
 date: "August 1, 2018"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    theme: united
+
 bibliography: library.bib
 ---
 
@@ -165,6 +170,26 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - sample density (0.5 mm mm−2)
   - scanning resolution (400 dpi) 	
   - scanning threshold 
+  
+  
+[@Birouste2014] Birouste et al. 2014. Plant Soil 
+- tissue density - “amount of structural material invested by unit of volume”
+- low-dense tissue means fast growth; rapid expansion with low carbon cost
+- but.. low root lifespan and vulnerable to pathogens + herbivory 
+- clearly an important plant strategy but there is no standard way to measure it
+- different terminologies exist too (so confusing when read different papers!):
+  - e.g., root tissue density, root dry matter content (RDMC), root mass density, root specific gravity
+- three methods exists so far: Archimedes, image analysis, RDMC
+- RDMC is the cheapest, quick method (I prefer this):
+  - seems like an analogue to leaf dry matter content (LDMC)
+  - calculation: root dry weight/root fresh weight
+  - linked by root density (which is assumed to be approximately 1)
+- root fresh weight is a proxy for root volume
+- R2 (0.97%) for pot grown species compared to Archimedes method
+- underestimation may be higher proportion of air spaces 
+- need to account for water saturation when measuring fresh weight 
+- image analysis were really sensitive to proposed parameters + thresholds
+
   
 # References
 

@@ -109,5 +109,36 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - root systems create large pore channels that increased water flow in substrate
   - created a selection effect (i.e., high cover) and reduced water retention performance
 
+# Methodology 
+
+[@Perez-Harguindeguy2013] Pérez-Harguindeguy et al. 2013. Austr J Botany
+
+- root mass fraction
+  - distribution of biomass to roots
+  - best way is to look at turnover rates; but it's time-consuming
+  - otherwise, root:shoot ratio works well since this metric is bounded at 0 to 1
+  - fast-growers tend to have higher RMF
+  - although, high RMF doesn’t always mean a high resource-uptake rate
+  - if similar mass, RMF works well. If not, try to use allometries for range of different masses
+- specific root length
+  - “ratio of root length to dry mass of fine roots”; comparable to SLA
+  - species high SRL still might have low tissue density; need to measure both!
+  - roots grown in pots constrain age; rule of thumb is that roots should fit in palm
+- processing root samples:
+  - unwashed roots can be stored for about a week without a lot of damage
+  - 50% ethanol solution might work well to preserve root for a while 
+  - gently wash low-density roots; hose down high-dense roots
+  - speed of washing roots depends on soil type; sandy soil is the best!
+  - stop washing roots when you lose some fine roots, then pluck away
+  - sort live roots from dead roots with a dissecting microscope
+  - after that, digitize them using a low end-flatbanner (ideally 1600 dpi)
+  - roots appear crisp and clean if submerged in a bit of water within a tray
+  - after scanning, roots should be dried for 48hr @ 60 C
+- root-system morphology
+  - maximum rooting depth
+  - lateral extent
+  - intensity of exploration
+
+
 # References
 

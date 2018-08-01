@@ -1,0 +1,11 @@
+---
+title: "Annotated Bibliography"
+output: html_notebook
+bibliography: bibliography.bib
+---
+
+```{r}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+```
+
+[@]

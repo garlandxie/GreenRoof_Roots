@@ -221,7 +221,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - estimated root length had a high correlation with actual root length for both softwares
 - stanning does in fact increase the contrast between roots and background 
 
-Rose. 2017. Front Plant Sci 
+[@Rose2017] Rose. 2017. Front Plant Sci 
 - looked two common root traits: specific root length and root tissue density (RTD)
   - based on measurements of length (L) or volume (V) and root dry weight
 - calculation can be simple, but assume that a homogeneous diameter for all roots
@@ -239,6 +239,23 @@ Rose. 2017. Front Plant Sci
 - assumption that roots are round is correct, but not constant root diameter
 - solution: add up volumes of the different diameter classes
 
+[@Kimura1999] Kimura. 1998. Plant Soil - Image analysis technique
+- previous methods require random overlap, which is time-consuming 
+- count number of pixels of the thinned images and multiply it by a factor
+- freeman chain code; accurate but severely affected by orientation
+- increase in sample size causes root overlaps
+- underestimation of root lengths; overlap correction methods 
+- newly proposed methods: Kimura’s algorithm ⇒ estimates root length
+  - effect of sample orientation and size is minimized
+  - underestimation caused by root overlap is reduced by counting overlaps directly
+  - skeletonize digitized root images into multiple line objects 
+  - “removes edge pixels from objects repeatedly” 
+  - “...until only skeleton pixels are diameter of the sample”
+- underestimated values; possible reasons could be:
+  - length of the tip was not always reduced 
+  - thinning induced an additional medial axis
+- account for overlapping pixels (unlike line-intersect), multiple line objects
+- compromise between small bias + insensitivity to preferential root orientation 
 
 # References
 

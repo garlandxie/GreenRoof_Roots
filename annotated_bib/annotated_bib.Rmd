@@ -92,6 +92,22 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - high crop factor (>1) increased water retention, but suffered from drought  
   - plants with crop factors (0.6 < k < 1) with drought avoidance --> ideal for balancing stormwater retention and drought risk
 
+[@Zhang2018] Zhang et al. 2018. STOTEN ref
+
+- tested green roof monoculture and mixtures on stormwater retention based on water-use strategies
+- based in Australia (warm dry ecosystem); need to optimize rainfall retention and plant survival 
+- plants needs to have high transpiration after rainfall and survive dry period
+- biodiversity may improve retention through transgressive overyielding and selection effect
+- life-form diversity is likely complicated by differences in biomass and rainfall interceptions
+  - grass monocultures have higher retention than some life-form mixtures
+  - possibility: unmeasured traits may affect retention
+- used plants with different water-use strategies (plastic, conservative)
+- green roofs captured at least 73% of rainfall
+- retention was not always higher in mixtures than monocultures
+  - affected by watering regime --> water-use strategies
+- certain sedum species have poor ability to retain water
+  - root systems create large pore channels that increased water flow in substrate
+  - created a selection effect (i.e., high cover) and reduced water retention performance
 
 # References
 

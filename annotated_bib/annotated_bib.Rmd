@@ -190,6 +190,55 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - need to account for water saturation when measuring fresh weight 
 - image analysis were really sensitive to proposed parameters + thresholds
 
-  
+
+[@Delory2017] Delory et al. 2017. Methods Eco Evol - Comparing image analysis software
+- compared IJ_RHIZO and WinRHIZO for root length density and specific root length
+- RLD: “root length per unit volume of soil” 
+  - architectural trait: exploring soil for limited resources
+- SRL: “root length per unit root biomass” 
+  - morphological trait - info on carbon construction costs for resource uptake 
+- need to know total root length before calculating RLD + SRL
+- compared three methods for SRL + RLD: Line-intersect, WinRHIZO + IJ_RHIZO
+  - used 50 digital images to help with comparing methods; looked for accuracy 
+-  didn’t stain the roots in case chemical analyses were needed later on
+- apparently, a high RLD increase the chance of overlapping roots
+- IJ_Kimura was found to be a good alternative to WinRHIZO 
+  - open-source and free; can edit and tweak macro if needed
+  - some info on parameters:
+    - excluded border of 40, 50 or 60 pixels width
+    - perform particle cleaning (size of the smallest particle: 1 mm²)
+    - circularity of particles: 0·75)
+    - automatic thresholding
+    - resolution of 400 dpi
+    
+    
+[@Himmelbauer2004] Himmelbauer et al. 2004. Plant and Soil 
+- compared ROOTEDGE and WinRHIZO softwares; based on different algorithms
+- used roots of cereal crops: Triticum durum and Hordeum vulgare
+- stained the roots to improve the scanning threshold; suggests staining for 5-10 minutes)
+- lack of detail for how algorithm works on ROOTEDGE
+- scanning roots in water is a good practice, but can produce shadows
+- estimated root length had a high correlation with actual root length for both softwares
+- stanning does in fact increase the contrast between roots and background 
+
+Rose. 2017. Front Plant Sci 
+- looked two common root traits: specific root length and root tissue density (RTD)
+  - based on measurements of length (L) or volume (V) and root dry weight
+- calculation can be simple, but assume that a homogeneous diameter for all roots
+- length could be overestimated, volume is underestimated 
+- does not affect specific root area; root surface area is proportional to diameter
+- WinRHIZO: popular commercial software to analyze root traits
+  - uses two-dimensional images 
+  - computes length, diameter, surface area and volume of root samples
+  - length and projected area are measured based on pixel counts
+  - surface area, diameter and volume are estimated as if roots are round
+- goal of this paper: raise awareness for overestimation of SRL and RTD when calculated from average diameter
+- findings: SRL and RTD value were indeed overestimated
+  - more error for herbaceous plants than woody species 
+  - greater within sample diameter heterogeneity for the herbs
+- assumption that roots are round is correct, but not constant root diameter
+- solution: add up volumes of the different diameter classes
+
+
 # References
 

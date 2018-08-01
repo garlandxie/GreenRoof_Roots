@@ -139,6 +139,32 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - lateral extent
   - intensity of exploration
 
+Pierret et al. 2013. Plant Soil
+- talks about the potential use of a free open-source software "IJ_RHIZO",
+  - compares both root length and average root diameter 
+- to test if the Kimura IJ_RHIZO is unbiased compared to Tennant WinRHIZO
+- WinRHIZO Tennant and Kimura IJ_RHIZO were highly correlated for root length
+- estimates (r = 0.99), with a slight overestimation of the latter estimator
+- average root diameter estimate had a weaker correlation between the two estimators,
+- advantage of IJ_Rhizo is that it provides the root radius distribution
+- WinRHIZO uses TIF images while IJ_Rhiz uses JPEG
 
+Bouma et al. 2000. Plant Soil. Recs for scanning root traits 
+- ppecific root length = ability for plants to explore soil + resource uptake
+- measuring root length can take some time; requires faster methods
+- we can automate this measurement, but it’s still sensitive to proposed parameters
+- thus, sensitivity analyses for SRL are needed (Delta-T Scan + WinRHIZO)
+- used three grass species; took six root samples from each individual + stained red 
+  - *Spartina anglica* 
+  - *Puccinellia maritima*
+  - *Elymus pycnanthus*
+- root hair may interfere with root length measurement
+- recommendations (and report this too!)
+  - do a quick line-intersect method on new species (obs > 400)
+  - stain for 24 hours using neutral red (although this might vary per species)
+  - sample density (0.5 mm mm−2)
+  - scanning resolution (400 dpi) 	
+  - scanning threshold 
+  
 # References
 

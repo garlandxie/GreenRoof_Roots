@@ -11,17 +11,36 @@ library(citr)
 ```
 
 # Green Roofs
-[@Lundholm2015]
+[@Lundholm2015:1] Lundholm et al. 2015. Env Sci Tech
 
 - plant functional can be used to streamline plant selection for green roof ecosystems
 collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) that are known for driving productivity and resource uptake
 - managed to find some links between plant traits and green roof ecosystem services using a model-averaging approach
 - some interesting findings were:
-  - stormwater capture rate: shrubs, tall forbs, and then succulents
-  - substrate cooling, there was a large variation among the grasses and shrubs,
+  - stormwater capture rate: shrubs had the highest performance, followed by grasses and succulents
+  - substrate cooling: large variation among the grasses and shrubs
   - creeping shrubs had the lowest cooling performance
 - it appears that succulent monocultures provide the largest benefits for substrate cooling, but a poor performance in terms of stormwater capture.
 
+[@Lundholm2015] Lundholm. 2015. J Appl Ecol
+- determine the impacts of green plant species  diversity on multiple ecosystem services
+- experimental approach: monocultures, 9 species mixture,  and 15 species mixture
+- used quantile regression to see if best-performing polycultures out-performed the best-performing monocultures for multiple services (stormwater capture, cooling, nutrient runoff, ecosystem multifunctionality)
+- found that species richness was positively correlated with several services, including ecosystem multifunctionality
+- four-year period: an increase in both trait-dependent complementarity and dominance
+
+[@Lundholm2010] Lundholm et al. 2010. PLOS one
+- examined if the impact of multiple vegetative life forms outperformed monocultures for several ecosystem services (e..g, stormwater capture, substrate cooling). 
+- found that multiple life-forms within a single module had:
+  - higher stormwater and substrate cooling than monocultures
+  - indicating that a role of sampling effect or niche complementarity
+- transpiration and water-uptake are two physiological processes that govern:
+  - substrate cooling
+  - stormwater retention 
+- belowground spatial niche complementarity 
+  - partially responsible for the two ecosystem services
+  - selected species have variation in their root traits 
+  - (e.g. dense and clustered fibrous roots versus rhizomes).
 
 # References
 

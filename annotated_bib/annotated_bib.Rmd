@@ -11,7 +11,7 @@ output:
 bibliography: library.bib
 ---
 
-```{r}
+```{r import libraries}
 library(citr)
 ```
 
@@ -114,7 +114,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - root systems create large pore channels that increased water flow in substrate
   - created a selection effect (i.e., high cover) and reduced water retention performance
 
-# Methodology 
+# Methodology: root sampling 
 
 [@Perez-Harguindeguy2013] Pérez-Harguindeguy et al. 2013. Austr J Botany
 
@@ -211,7 +211,6 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
     - automatic thresholding
     - resolution of 400 dpi
     
-    
 [@Himmelbauer2004] Himmelbauer et al. 2004. Plant and Soil 
 - compared ROOTEDGE and WinRHIZO softwares; based on different algorithms
 - used roots of cereal crops: Triticum durum and Hordeum vulgare
@@ -256,6 +255,52 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - thinning induced an additional medial axis
 - account for overlapping pixels (unlike line-intersect), multiple line objects
 - compromise between small bias + insensitivity to preferential root orientation 
+
+Tennant. 1975. J Ecol
+- measuring length estimates while controlling for area and length of intersect line
+- uses a grid; I believe this accounts for any overlapping roots; some studies use 2X2cm
+- formula: root length = c X number of intercepts X Grid unit
+- R2 of 0.99 between estimated and actual length (pretty good actually)
+
+# Methodology: greenhouse experiments 
+
+Poorter et al. 2012. Func Plant Bio 
+- plant biologists rely on experimental setups in which plants are cultivated in labs
+- generalisations across experiments: results are replicable and reproducible
+- aim of our paper - a pragmatic guide to capture the minimum level of knowledge
+  - how to grow plants either under so-called ‘optimal conditions’ 
+  - or under conditions designed to simulate effects of abiotic stress factor
+- where to conduct the experiment?
+  - experimental gardens (cheapest solution)
+  - glasshouses (more expensive than gardens, but cheaper than chambers) 
+    - better control of water supply 
+    - protection against too low temperatures
+    - experience higher-than-outdoor air temperatures during nights)
+    - lower irradiance because of shading
+    - can extend experiments (strong economic argument) 
+    - significant spatial heterogeneities in irradiance
+  - climate-controlled chamber
+    - orthogonal dissection of environmental factors 
+    - good replicability of experiments
+    - disadvantages: too controlled, high vertical light profiles, large spatial variability
+- which rooting mediums to choose? 
+  - pots
+    - pots filled with an inert solid medium
+    - mimic the higher mechanical impedance to root growth
+    - nutrient availability of commercially provided soil will vary 
+    - root damage may occur if pots are black +  direct solar radiation
+    - the smaller the pot the stronger roots become pot-bound
+- how many replicates per treatment?
+  - fix the location of plants and include this location as subplot (block) in the statistical analysis
+  - blocks should be arranged 
+  - known variation in climate conditions among blocks is maximised
+  - variation among blocks is maximizesd; within block is minimized 
+  -re-arranges pots within a block to avoid edge effects 
+- plant size within a population of individually grown plants 
+  - does not show a normal distribution, but rather a log-normal one
+- if you want to test for both significance + magnitude
+  - then you might want to increase sample size
+  - simulations show that 12 reps accounts for ~30% of experiments
 
 # References
 

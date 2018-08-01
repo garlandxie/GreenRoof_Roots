@@ -61,5 +61,18 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - due to the relatively homogeneous conditions 
   - high levels of ecological novelty
 
+[@Farrell2013] Farell et al. 2013. Plant Soil 
+- habitat template approach to find high-water users with drought tolerance
+- plant from granite outcrops were chosen as candidate species 
+  - xerophytes adapted to limited-water conditions
+  - geophytes will lose leaves in unfavourable conditions, but will remain alive
+- for optimal performance, green roofs need to restore storage capacity as soon as possible
+- tested physiological traits of 12 granite outcrop species in a glasshouse experiment 
+- granite outcrop species outperform sedum succulents for stormwater runoff
+- monocots and herbs had the highest transpiration rates due to high RMF
+- but, mixtures with high drought-resistance and high stormwater performance is key
+
+[@Szota2017]
+
 # References
 

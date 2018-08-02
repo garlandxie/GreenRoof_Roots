@@ -17,7 +17,7 @@ library(citr)
 
 # Green Infrastruture
 
-[@Prudencio2018] Prudencio and Null. 2018. Env Res Lett - *review in green infrastructure ecosystem services*
+[@Prudencio2018] **Prudencio and Null. 2018. Env Res Lett - review in green infrastructure ecosystem services**
 - conventional management routes runoff to nearby bodies of water through storm-drains
 -   reduces groundwater recharge and infiltrations
 -   picks up heavy metals and chemicals along the way
@@ -40,7 +40,7 @@ library(citr)
   - 6) overlapping and redundant green terminology
 - needs a catch-all phrase: "green stormwater infrastructure"
 
-[@Cameron2016] Cameron and Blanuša. 2016. Ann Botany 
+[@Cameron2016] **Cameron and Blanuša. 2016. Ann Botany - green infrastructure and plant traits**
 
 - lack of specific plant species in current green roof policies
 - issue: plant selection provide human needs + tolerance to urban environments
@@ -65,7 +65,8 @@ library(citr)
 - urban design is poor if monocultures are only used
 
 # Green Roofs
-[@Lundholm2015:2] Lundholm et al. 2015. Env Sci Tech
+
+[@Lundholm2015:2] **Lundholm et al. 2015. Env Sci Tech - green roofs and aboveground traits**
 
 - plant functional can be used to streamline plant selection for green roof ecosystems
 collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) that are known for driving productivity and resource uptake
@@ -76,14 +77,14 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - creeping shrubs had the lowest cooling performance
 - it appears that succulent monocultures provide the largest benefits for substrate cooling, but a poor performance in terms of stormwater capture.
 
-[@Lundholm2015] Lundholm. 2015. J Appl Ecol
+[@Lundholm2015] **Lundholm. 2015. J Appl Ecol - role of species diversity in green roof services**
 - determine the impacts of green plant species  diversity on multiple ecosystem services
 - experimental approach: monocultures, 9 species mixture,  and 15 species mixture
 - used quantile regression to see if best-performing polycultures out-performed the best-performing monocultures for multiple services (stormwater capture, cooling, nutrient runoff, ecosystem multifunctionality)
 - found that species richness was positively correlated with several services, including ecosystem multifunctionality
 - four-year period: an increase in both trait-dependent complementarity and dominance
 
-[@Lundholm2010] Lundholm et al. 2010. PLOS one
+[@Lundholm2010] **Lundholm et al. 2010. PLOS one - role of plant functional groups in green roof services**
 - examined if the impact of multiple vegetative life forms outperformed monocultures for several ecosystem services (e..g, stormwater capture, substrate cooling). 
 - found that multiple life-forms within a single module had:
   - higher stormwater and substrate cooling than monocultures
@@ -96,7 +97,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - selected species have variation in their root traits 
   - (e.g. dense and clustered fibrous roots versus rhizomes)
   
-[@Lundholm2015] Lundholm. 2015. Front Evo Evo   
+[@Lundholm2015] **Lundholm. 2015. Front Evo Evo - green roofs as constructed ecosystems**
 - ecological and evolutionary relevance of constructed ecosystems 
   - (e.g., green roofs, constructed wetlands, bioretention filters)
 - defines constructed ecosystems “as a set of living and nonliving components”
@@ -115,7 +116,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - due to the relatively homogeneous conditions 
   - high levels of ecological novelty
 
-[@Farrell2013] Farell et al. 2013. Plant Soil 
+[@Farrell2013] **Farell et al. 2013. Plant Soil - physiological traits and drought survival in green roofs**
 - habitat template approach to find high-water users with drought tolerance
 - plant from granite outcrops were chosen as candidate species 
   - xerophytes adapted to limited-water conditions
@@ -126,7 +127,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - monocots and herbs had the highest transpiration rates due to high RMF
 - but, mixtures with high drought-resistance and high stormwater performance is key
 
-[@Szota2017] Szota et al. 2017. Sci Total Env
+[@Szota2017] **Szota et al. 2017. Sci Total Env - physiological traits in green roofs**
 - selecting green roof plants has to balance both drought risk and stormwater retention
 - “around 60-80% of rainfall is lost to evapotranspiration in natural ecosystems”
 - green roofs should aim to achieve 80% rainfall lost to evapotranspiration
@@ -146,7 +147,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - high crop factor (>1) increased water retention, but suffered from drought  
   - plants with crop factors (0.6 < k < 1) with drought avoidance --> ideal for balancing stormwater retention and drought risk
 
-[@Zhang2018] Zhang et al. 2018. STOTEN ref
+[@Zhang2018] **Zhang et al. 2018. STOTEN**
 
 - tested green roof monoculture and mixtures on stormwater retention based on water-use strategies
 - based in Australia (warm dry ecosystem); need to optimize rainfall retention and plant survival 
@@ -163,7 +164,6 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - root systems create large pore channels that increased water flow in substrate
   - created a selection effect (i.e., high cover) and reduced water retention performance
   
-  
 [@Mentens2006] **Mentens et al. 2006. Landsc Urban Plan - green roofs and stormwater runoff**
 - a literature search of 18 papers
 - attempted to compare the annual rainfall runoff relationships in traditional + green roofs
@@ -172,6 +172,44 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - conclude that green roofs are important for reducing over stormwater flow, but not for peak flood events
 - may have underestimated the role of vegetation in this aspect
 - certain root systems can absorb water very quickly
+
+[@Getter2006] **Getter et al. 2006. HortSci - green roofs and ecosystem services** 
+- review: talk about the history of green roofs, ecosystem services, and plant selection
+- some interesting comments: 
+  - species capable of surviving microclimates are first step in plant selection,
+  - substrate composition should be a light-weight, well-drained mineral materials
+  - roots in shallow soils experience high fluctuations in moisture and temperature
+  - plant traits of good colonizers are primary choices for plant selection,
+  - plant selection based on root traits; deep-rooted systems fail in shallow soil
+- van Woert et al. (2005) showed that Sedum had low evapotranspiration rates
+
+[@Oberndorfer2007] **Oberndorfer et al. 2008. Biosci - hreen roofs as urban ecosystems**
+- green roofs are typically viewed as an engineering or horticultural challenge
+- ..but also as an ecosystem which drives the processes that govern valuable services
+- here, the authors talk about the following:
+  - history of green roofs (i.e. the inclusion of sedum species),
+  - vegetative characteristics (i.e. substrate depth, survivability),
+  -  ecosystem services provided by green roofs (e.g. storm-water management),
+- two properties of plant communities that govern green roof performance are 
+  - (1) ability to resist and recover from environmental fluctuations or disturbances,
+  - (2) the rate at which resources can be consumed
+- the latter suggests that greater resource use should reduce runoff of water + nutrients
+  - suggest belowground components could improve green roof services
+  - either direct (e.g. root traits) or indirect benefits (e.g. mycorrhizal associations)
+  
+[@Doug2008] **Doug et al. 2005. Ryerson University - Toronto Report on Green Roof Benefits** 
+- some quantifiable monetary values from green roofs
+  - stormwater flow reduction
+  - impact on combined sewer overflow
+  - improvement in air quality
+  - reduction in direct energy use
+  - reduction in urban heat island effect
+- cost-benefit analysis based on assumption that 100% of green roof was used
+  - initial savings - stormwater: 118 million $, CSO: 46 million $
+  - annual savings - stormwater: 0$, CSO: 750 000$ 
+- minimum standards of green roof to achieve the above-mentioned benefits
+- covers % of roof; max runoff coefficient of 50%, extensive 
+
 
 # Methodology: root sampling 
 
@@ -230,8 +268,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - scanning resolution (400 dpi) 	
   - scanning threshold 
   
-  
-[@Birouste2014] Birouste et al. 2014. Plant Soil 
+[@Birouste2014] **Birouste et al. 2014. Plant Soil** 
 - tissue density - “amount of structural material invested by unit of volume”
 - low-dense tissue means fast growth; rapid expansion with low carbon cost
 - but.. low root lifespan and vulnerable to pathogens + herbivory 
@@ -249,8 +286,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - need to account for water saturation when measuring fresh weight 
 - image analysis were really sensitive to proposed parameters + thresholds
 
-
-[@Delory2017] Delory et al. 2017. Methods Eco Evol - Comparing image analysis software
+[@Delory2017] **Delory et al. 2017. Methods Eco Evol - comparing image analysis softwares**
 - compared IJ_RHIZO and WinRHIZO for root length density and specific root length
 - RLD: “root length per unit volume of soil” 
   - architectural trait: exploring soil for limited resources
@@ -270,7 +306,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
     - automatic thresholding
     - resolution of 400 dpi
     
-[@Himmelbauer2004] Himmelbauer et al. 2004. Plant and Soil 
+[@Himmelbauer2004] **Himmelbauer et al. 2004. Plant and Soil - ROOTEDGE software for root traits**
 - compared ROOTEDGE and WinRHIZO softwares; based on different algorithms
 - used roots of cereal crops: Triticum durum and Hordeum vulgare
 - stained the roots to improve the scanning threshold; suggests staining for 5-10 minutes)
@@ -279,7 +315,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - estimated root length had a high correlation with actual root length for both softwares
 - stanning does in fact increase the contrast between roots and background 
 
-[@Rose2017] Rose. 2017. Front Plant Sci 
+[@Rose2017] **Rose. 2017. Front Plant Sci - re-evaluating methods to measure root diameter**
 - looked two common root traits: specific root length and root tissue density (RTD)
   - based on measurements of length (L) or volume (V) and root dry weight
 - calculation can be simple, but assume that a homogeneous diameter for all roots
@@ -297,7 +333,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - assumption that roots are round is correct, but not constant root diameter
 - solution: add up volumes of the different diameter classes
 
-[@Kimura1999] Kimura. 1998. Plant Soil - Image analysis technique
+[@Kimura1999] **Kimura. 1998. Plant Soil - root measurement technique to avoid overlapping**
 - previous methods require random overlap, which is time-consuming 
 - count number of pixels of the thinned images and multiply it by a factor
 - freeman chain code; accurate but severely affected by orientation
@@ -315,7 +351,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - account for overlapping pixels (unlike line-intersect), multiple line objects
 - compromise between small bias + insensitivity to preferential root orientation 
 
-Tennant. 1975. J Ecol
+[@Tennant2009] **Tennant. 1975. J Ecol - line-intersect method for root sampling** 
 - measuring length estimates while controlling for area and length of intersect line
 - uses a grid; I believe this accounts for any overlapping roots; some studies use 2X2cm
 - formula: root length = c X number of intercepts X Grid unit
@@ -323,7 +359,7 @@ Tennant. 1975. J Ecol
 
 # Methodology: greenhouse experiments 
 
-[@Poorter2012] Poorter et al. 2012. Func Plant Bio 
+[@Poorter2012] **Poorter et al. 2012. Func Plant Bio - the art of growing plants in greenhouses**
 - plant biologists rely on experimental setups in which plants are cultivated in labs
 - generalisations across experiments: results are replicable and reproducible
 - a pragmatic guide to capture the minimum level of knowledge of how to grow plants under "ideal" conditions
@@ -359,7 +395,7 @@ Tennant. 1975. J Ecol
   - then you might want to increase sample size
   - simulations show that 12 reps accounts for ~30% of experiments
 
- [@Poorter2012a] Poorter et al. 2012. Func Plant Bio - Does pot size matter?
+ [@Poorter2012a] **Poorter et al. 2012. Func Plant Bio - pot size does matter**
 - experiments are often conducted on plants grown in some kind of container
 - pot size seems to have received little consideration; not reported in methods
 - use of small pots in experimental biology
@@ -376,7 +412,7 @@ Tennant. 1975. J Ecol
 
 # Methodology: statistics
 
-[@Greenland2016] Greenland et al. 2016. Eur J Epidem
+[@Greenland2016] **Greenland et al. 2016. Eur J Epidem - huge misuse of p-values and why**
 - huge misuse of statistics among researchers; lead to journals banning some practices
 - solution: basic teaching of general methods needs to be improved
 - stats models - math representation that captures variability; big list of assumptions
@@ -410,8 +446,6 @@ Tennant. 1975. J Ecol
   - best way to statistically evaluate multiple studies: do a meta-analysis!
   - any opinions about certainty cannot be inferred only from statistical methods 
   - describe full sequence of events since statistic methods have assumptions
-
-
 
 # References
 

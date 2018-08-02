@@ -15,6 +15,33 @@ bibliography: library.bib
 library(citr)
 ```
 
+# Green Infrastruture
+
+[@Cameron2016] Cameron and Blanuša. 2016. Ann Botany 
+
+- lack of specific plant species in current green roof policies
+- issue: plant selection provide human needs + tolerance to urban environments
+- using plant traits and genotypes may improve plant selection process
+- large focus on street trees and green roofs
+- multiple mechanisms of how vegetation can provide rooftop cooling on green roofs 
+  - i.g., shade, evapotranspiration, thermal to chemical energy, albedo
+  - extent of cooling altered by traits such as LAI SLA, stomatal conductance, leaf colour  
+  - sedums aren't best species to optimize rooftop cooling
+  - species with light-colour non-succulent leaf canopies were more superior
+  - species that cool via shade: attain multiple layers of leaves
+  - species that cool via evapotranspiration: provide single layer of evenly spaced leaves
+- water retention was improved by grasses and forbs rather than succulents 
+  - based on structural differences
+  - ability to recharge storage capacity is important as well (high transpiration rates)
+- certain species are better than others in promoting multiple services
+  - for example, salvia offinalis and stachys byzantina 
+- practitioners tend to perceive plant selection as what survives well or what looks pretty
+  - need to chance policymakers' perspective 
+  - "why" plant selection is important, but to how "how" + "where" for effective management
+  - a change in philosophy from "what will survive" to "what provides function".
+- urban design is poor if monocultures are only used
+
+
 # Green Roofs
 [@Lundholm2015:2] Lundholm et al. 2015. Env Sci Tech
 

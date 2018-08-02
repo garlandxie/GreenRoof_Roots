@@ -17,6 +17,29 @@ library(citr)
 
 # Green Infrastruture
 
+[@Prudencio2018] Prudencio and Null. 2018. Env Res Lett - *review in green infrastructure ecosystem services*
+- conventional management routes runoff to nearby bodies of water through storm-drains
+-   reduces groundwater recharge and infiltrations
+-   picks up heavy metals and chemicals along the way
+- distinctions between green and gray infrastructure
+  - green infrastructure - generates both human and ecosystem services
+  - gray infrastructure - route stormwater to downstream water bodies in cities
+- ecosystem service framework in four parts
+  - 1) provisioning - water supply, producing food
+  - 2) regulating - temperature regulation, water purification
+  - 3) cultural - aesthetics and recreation
+  - 4) supporting - aquatic and riparian species
+- collected 170 articles on the intersection of this topic 
+- more papers on provisioning and regulating services (make sense: think economic value)
+- overall findings: 
+  - 1) most studies were performed at a small spatial scale
+  - 2) 29% of studies used frameworks (so no empirical evidence here)
+  - 3) 39% of studies quantified ecosystem services
+  - 4) research conducted across the globe; biased towards developed countries
+  - 5) integrate engineering, physical sci, and social sci in research questions
+  - 6) overlapping and redundant green terminology
+- needs a catch-all phrase: "green stormwater infrastructure"
+
 [@Cameron2016] Cameron and Blanuša. 2016. Ann Botany 
 
 - lack of specific plant species in current green roof policies
@@ -37,10 +60,9 @@ library(citr)
   - for example, salvia offinalis and stachys byzantina 
 - practitioners tend to perceive plant selection as what survives well or what looks pretty
   - need to chance policymakers' perspective 
-  - "why" plant selection is important, but to how "how" + "where" for effective management
+  - "why" plant selection is important, but need "how" + "where" for effective management
   - a change in philosophy from "what will survive" to "what provides function".
 - urban design is poor if monocultures are only used
-
 
 # Green Roofs
 [@Lundholm2015:2] Lundholm et al. 2015. Env Sci Tech
@@ -140,10 +162,20 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - certain sedum species have poor ability to retain water
   - root systems create large pore channels that increased water flow in substrate
   - created a selection effect (i.e., high cover) and reduced water retention performance
+  
+  
+[@Mentens2006] **Mentens et al. 2006. Landsc Urban Plan - green roofs and stormwater runoff**
+- a literature search of 18 papers
+- attempted to compare the annual rainfall runoff relationships in traditional + green roofs
+- extensive green roofs tend to have a larger variance in annual runoff than grey roofs  
+- large variability may due to the unequal sampling in both rooftop types
+- conclude that green roofs are important for reducing over stormwater flow, but not for peak flood events
+- may have underestimated the role of vegetation in this aspect
+- certain root systems can absorb water very quickly
 
 # Methodology: root sampling 
 
-[@Perez-Harguindeguy2013] Pérez-Harguindeguy et al. 2013. Austr J Botany
+[@Perez-Harguindeguy2013] **Pérez-Harguindeguy et al. 2013. Austr J Botany**
 
 - root mass fraction
   - distribution of biomass to roots
@@ -171,7 +203,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - lateral extent
   - intensity of exploration
 
-[@Pierret2013] Pierret et al. 2013. Plant Soil
+[@Pierret2013] **Pierret et al. 2013. Plant Soil - using IJ_RHIZO**
 - talks about the potential use of a free open-source software "IJ_RHIZO",
   - compares both root length and average root diameter 
 - to test if the Kimura IJ_RHIZO is unbiased compared to Tennant WinRHIZO
@@ -181,7 +213,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - advantage of IJ_Rhizo is that it provides the root radius distribution
 - WinRHIZO uses TIF images while IJ_Rhiz uses JPEG
 
-[@Bouma2000] Bouma et al. 2000. Plant Soil. Recs for scanning root traits 
+[@Bouma2000] **Bouma et al. 2000. Plant Soil - recs for scanning root traits** 
 - specific root length = ability for plants to explore soil + resource uptake
 - measuring root length can take some time; requires faster methods
 - we can automate this measurement, but it’s still sensitive to proposed parameters

@@ -7,7 +7,7 @@ output: html_document
 
 ## Import 
 
-```{r import - libraries, include = TRUE}
+```{r import - libraries, echo=TRUE}
 library(magrittr)
 library(googlesheets)
 library(dplyr)
@@ -16,9 +16,6 @@ library(here)
 ```
 
 ```{r import - weight data via googlesheets}
-
-# annoying that I have to authorize everytime I run this code
-# find a custom function that uses a shareable link instead
 
 import_gs <- function(url, ws_name) {
   gs_data <- gs_url(url)
@@ -35,24 +32,6 @@ msc_weight <- import_gs("https://docs.google.com/spreadsheets/d/1jtiaNA2VG_fwnsM
 
 ```{r glimpse - weight, echo=FALSE}
 msc_weight %>% glimpse()
-```
-
-```{r cleaning - colnames, echo = FALSE}
-# rename columns 
-msc_weight %<>% 
-  rename(record_date = `Recorded by`,
-         scan_date   = `Scanned by (+ Date)`,
-         type_date   = `Typed by (+ Date)`,
-         edit_date   = `Edited by (+Date)` ,
-         session     = Session,
-         block       = Block,
-         pot_id      = `Pot ID`,
-         treatment   = Treatment,
-         sample_date = `Sampling Date`,
-         period      = Period, 
-         weight_lbs  = `Weight (lbs)`,
-         comments    = Remarks) %>%
-  glimpse()
 ```
 
 ```{r check 1 - # blocks per session, echo = FALSE}
@@ -80,7 +59,7 @@ msc_weight %>%
 
 msc_weight %>% 
   group_by(session, treatment, block, period) %>%
-  summarize(n_pots = length(unique(pot_id))) %>%
+  summarize(n_pots = length(unique(pot_ID))) %>%
   arrange(treatment, desc(n_pots))
 
 ```
@@ -91,7 +70,7 @@ msc_weight %>%
 
 msc_weight %>%
   group_by(session, block, treatment, period) %>%
-  summarize(duplicates = anyDuplicated(pot_id)) %>%
+  summarize(duplicates = anyDuplicated(pot_ID)) %>%
   arrange(desc(duplicates))
 ```
 
@@ -108,14 +87,14 @@ get_n_spp <- function(df, block_id, trt_id, period_id) {
     
   # filter
     df2 <- df %>%
-      select(session, block, treatment, period, pot_id) %>%
+      select(session, block, treatment, period, pot_ID) %>%
       filter(block == !! block_id2 & treatment == !! trt_id2 & period == !! period_id2) %>%
-      group_by(pot_id) %>%
+      group_by(pot_ID) %>%
       summarise(count = n(),
                 block = block_id,
                 trt = trt_id, 
                 period = period_id) %>%
-      select(block, trt, period, pot_id, count)
+      select(block, trt, period, pot_ID, count)
   
   # return           
     return(df2)
@@ -211,20 +190,20 @@ ls_args_wd <- list(c(clean_b1_wd, period_id = "T1"),
 # piling everything into a singe df
 invoke_map(get_n_spp, .x = ls_args_ww) %>%
   bind_rows() %>%
-  filter(count < 6 & block == "B5") %>% 
-  arrange(pot_id, count, period) 
+  arrange(pot_ID, count, period) 
 
 invoke_map(get_n_spp, .x = ls_args_wd) %>%
   bind_rows() %>%
-  filter(count < 4 & block == "B5") %>% 
-  arrange(pot_id, period, count) 
+  filter(count < 8 & block == "B5") %>%
+  arrange(pot_ID, period, count) 
 
 ```
 
 
 ## Save data!
 
-write.csv(msc_weight_clean, file = here("data/project_data/original", "weight.csv"))
+write.csv(msc_weight, file = here("data/project_data/original", "weight.csv"))
+
 
 ## Session info
 

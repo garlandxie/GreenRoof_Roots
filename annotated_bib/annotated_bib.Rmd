@@ -17,7 +17,9 @@ library(citr)
 
 # Backgorund - green infrastruture
 
-[@Prudencio2018] **Prudencio and Null. 2018. Env Res Lett - review in green infrastructure ecosystem services**
+## [@Prudencio2018] 
+
+**Env Res Lett - review in green infrastructure ecosystem services**
 - conventional management routes runoff to nearby bodies of water through storm-drains
 -   reduces groundwater recharge and infiltrations
 -   picks up heavy metals and chemicals along the way
@@ -40,8 +42,9 @@ library(citr)
   - 6) overlapping and redundant green terminology
 - needs a catch-all phrase: "green stormwater infrastructure"
 
-[@Cameron2016] **Cameron and Blanuša. 2016. Ann Botany - green infrastructure and plant traits**
+## [@Cameron2016] 
 
+**Cameron and Blanuša. 2016. Ann Botany - green infrastructure and plant traits**
 - lack of specific plant species in current green roof policies
 - issue: plant selection provide human needs + tolerance to urban environments
 - using plant traits and genotypes may improve plant selection process
@@ -64,7 +67,7 @@ library(citr)
   - a change in philosophy from "what will survive" to "what provides function".
 - urban design is poor if monocultures are only used
 
-**Ordonez et al. 2018. Nature of Cities (essay) - Human design and green infrastructure** 
+## **Ordonez et al. 2018. Nature of Cities (essay) - Human design and green infrastructure** 
 
 - humans are a part of nature
   - complexity can be viewed as independent dimensions
@@ -79,7 +82,9 @@ library(citr)
   - comprehensive suite of performance indicators for GI is needed
   - current demographic/environmental changes are important for GI
 
-[@Mitsch2003] **Mitsch. 2003. Ecol Eng - What is ecological engineering??** 
+## [@Mitsch2003] 
+
+**Mitsch. 2003. Ecol Eng - What is ecological engineering??** 
 - design of sustainable ecosystems; mutual benefits to nature and human society
 - find new and affordable approaches for engineers
 - example: redesign plumbing in Florida Everglades
@@ -107,6 +112,8 @@ library(citr)
     - must seek to maximize performance + provide habitat for wildlife 
     - counterproductive to disturb natural ecosystems unless necessary
     
+## [@Read2010]
+
 **Read et al. 2010. Int. J. Phytoremed - Nutrient removal in stormwater biofilter** 
 - tested 20 plant species in greenhouse biofilters for nutrient removal (N, P)
 - grew them in monocultures rather than mixtures
@@ -119,7 +126,9 @@ library(citr)
 - practicality: plant choice is not that important for metal removal
 - needs more testing on a wider range of species; look at longer temporal trends 
 
-[@Payne2018] **Payne et al. 2018. Adv Water Res - Guideline to plant selection for biofilters** 
+## [@Payne2018] 
+
+**Payne et al. 2018. Adv Water Res - Guideline to plant selection for biofilters** 
 - looked at nutrient removal and water balance
 - detailed trait dataset with an 18-month experiment on stormwater biofilters
 - grsses, sedges, trees, shrubs + common lawn grasses 
@@ -130,7 +139,9 @@ library(citr)
   - objective: Nitrogen removal
     - key traits: extensive fine roots, high total plant mass, high RGR
     
-[@LeCoustumer2012] **Le Cousumer et al. 2012. Water Research - Plant traits and stormwater biofilters** 
+## [@LeCoustumer2012] 
+
+**Le Cousumer et al. 2012. Water Research - Plant traits and stormwater biofilters** 
 - influence of design + operating conditions on lifespan of stormwater biofilters
 - 72-week large laboratory study 
 - chosen species: *Carex appressa*, *Dianella revoluta*, *Microleana stipoides*, *Leucophyta brownii*, *Melaleuca ericifolia*
@@ -145,8 +156,9 @@ library(citr)
 - spatial scale (intentional design?) is important too
 - small basins are more vulnerable to large catchments 
 
-[@Carter2008] **Carter and Fowler. 2008. Env Manag - A review of green roof policies** 
- 
+## [@Carter2008] 
+
+**Carter and Fowler. 2008. Env Manag - A review of green roof policies** 
 - federal, state and municipal policies
 - federal incentives to promote green roofs
   - (1) US - FWPCA or CWA acts
@@ -171,11 +183,37 @@ library(citr)
   - more tools for practitioners == more flexibility
   - different policies at different governmental levels
   - policy effects are difficult to track
+  
+## [@Felson2013] 
 
-# Background - Green Roofs
+**Felson et al. 2013. BioSci - including ecologists in urban infrastructure projects** 
+- green infrastructure projects do provide their intended ecosystem services
+- designers + land managers must construct ecosystems containing plant/animal/soil microbial communities 
+- meet performance criteria and that are resilient to disturbance 
+- requires systematic observation
+- short- and long-term monitoring programs are increasing in number
+- lack of ecological knowledge in green infrastructure 
+- ecologists can convert management questions into testable hypotheses 
+- design, construction, and monitoring of green infrastructure
+- case study: New York City Afforestation Project (NY-CAP)
+  - MillionTreesNYC initiative
+  - designed-experiment approach 
+  - provided a framework for collaboration of designers and ecologists
+  - factorial arrangement:
+    - tree species richness (six species versus two species)
+    - stand complexity (with shrubs and herbs versus without)
+    - soil amendment (with compost versus without)
+- three central themes:
+  - urban environmental stressors and plant health
+  - management practices and plant health
+- planted trees recruit future urban forest or invasive species? 
+- provides list of good recs for ecologists trying to get into urban infrastructure projects
 
-[@Lundholm2015:2] **Lundholm et al. 2015. Env Sci Tech - green roofs and aboveground traits**
+# Background - green Roofs
 
+## [@Lundholm2015:2] 
+
+**Lundholm et al. 2015. Env Sci Tech - green roofs and aboveground traits**
 - plant functional can be used to streamline plant selection for green roof ecosystems
 collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) that are known for driving productivity and resource uptake
 - managed to find some links between plant traits and green roof ecosystem services using a model-averaging approach
@@ -185,14 +223,18 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - creeping shrubs had the lowest cooling performance
 - it appears that succulent monocultures provide the largest benefits for substrate cooling, but a poor performance in terms of stormwater capture.
 
-[@Lundholm2015] **Lundholm. 2015. J Appl Ecol - role of species diversity in green roof services**
+## [@Lundholm2015] 
+
+**Lundholm. 2015. J Appl Ecol - role of species diversity in green roof services**
 - determine the impacts of green plant species  diversity on multiple ecosystem services
 - experimental approach: monocultures, 9 species mixture,  and 15 species mixture
 - used quantile regression to see if best-performing polycultures out-performed the best-performing monocultures for multiple services (stormwater capture, cooling, nutrient runoff, ecosystem multifunctionality)
 - found that species richness was positively correlated with several services, including ecosystem multifunctionality
 - four-year period: an increase in both trait-dependent complementarity and dominance
 
-[@Lundholm2010] **Lundholm et al. 2010. PLOS one - role of plant functional groups in green roof services**
+## [@Lundholm2010] 
+
+**Lundholm et al. 2010. PLOS one - role of plant functional groups in green roof services**
 - examined if the impact of multiple vegetative life forms outperformed monocultures for several ecosystem services (e..g, stormwater capture, substrate cooling). 
 - found that multiple life-forms within a single module had:
   - higher stormwater and substrate cooling than monocultures
@@ -205,7 +247,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - selected species have variation in their root traits 
   - (e.g. dense and clustered fibrous roots versus rhizomes)
   
-[@Lundholm2015] **Lundholm. 2015. Front Evo Evo - green roofs as constructed ecosystems**
+## [@Lundholm2015] 
+
+**Lundholm. 2015. Front Evo Evo - green roofs as constructed ecosystems**
 - ecological and evolutionary relevance of constructed ecosystems 
   - (e.g., green roofs, constructed wetlands, bioretention filters)
 - defines constructed ecosystems “as a set of living and nonliving components”
@@ -224,7 +268,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - due to the relatively homogeneous conditions 
   - high levels of ecological novelty
 
-[@Farrell2013] **Farell et al. 2013. Plant Soil - physiological traits and drought survival in green roofs**
+## [@Farrell2013] 
+
+**Farell et al. 2013. Plant Soil - physiological traits and drought survival in green roofs**
 - habitat template approach to find high-water users with drought tolerance
 - plant from granite outcrops were chosen as candidate species 
   - xerophytes adapted to limited-water conditions
@@ -235,7 +281,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - monocots and herbs had the highest transpiration rates due to high RMF
 - but, mixtures with high drought-resistance and high stormwater performance is key
 
-[@Szota2017] **Szota et al. 2017. Sci Total Env - physiological traits in green roofs**
+## [@Szota2017] 
+
+**Szota et al. 2017. Sci Total Env - physiological traits in green roofs**
 - selecting green roof plants has to balance both drought risk and stormwater retention
 - “around 60-80% of rainfall is lost to evapotranspiration in natural ecosystems”
 - green roofs should aim to achieve 80% rainfall lost to evapotranspiration
@@ -255,8 +303,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - high crop factor (>1) increased water retention, but suffered from drought  
   - plants with crop factors (0.6 < k < 1) with drought avoidance --> ideal for balancing stormwater retention and drought risk
 
-[@Zhang2018] **Zhang et al. 2018. STOTEN**
+## [@Zhang2018] 
 
+**Zhang et al. 2018. STOTEN**
 - tested green roof monoculture and mixtures on stormwater retention based on water-use strategies
 - based in Australia (warm dry ecosystem); need to optimize rainfall retention and plant survival 
 - plants needs to have high transpiration after rainfall and survive dry period
@@ -272,7 +321,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - root systems create large pore channels that increased water flow in substrate
   - created a selection effect (i.e., high cover) and reduced water retention performance
   
-[@Mentens2006] **Mentens et al. 2006. Landsc Urban Plan - green roofs and stormwater runoff**
+## [@Mentens2006] 
+
+**Mentens et al. 2006. Landsc Urban Plan - green roofs and stormwater runoff**
 - a literature search of 18 papers
 - attempted to compare the annual rainfall runoff relationships in traditional + green roofs
 - extensive green roofs tend to have a larger variance in annual runoff than grey roofs  
@@ -281,7 +332,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - may have underestimated the role of vegetation in this aspect
 - certain root systems can absorb water very quickly
 
-[@Getter2006] **Getter et al. 2006. HortSci - green roofs and ecosystem services** 
+## [@Getter2006] 
+
+**Getter et al. 2006. HortSci - green roofs and ecosystem services** 
 - review: talk about the history of green roofs, ecosystem services, and plant selection
 - some interesting comments: 
   - species capable of surviving microclimates are first step in plant selection,
@@ -291,7 +344,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - plant selection based on root traits; deep-rooted systems fail in shallow soil
 - van Woert et al. (2005) showed that Sedum had low evapotranspiration rates
 
-[@Oberndorfer2007] **Oberndorfer et al. 2008. Biosci - hreen roofs as urban ecosystems**
+## [@Oberndorfer2007] 
+
+**Oberndorfer et al. 2008. Biosci - hreen roofs as urban ecosystems**
 - green roofs are typically viewed as an engineering or horticultural challenge
 - ..but also as an ecosystem which drives the processes that govern valuable services
 - here, the authors talk about the following:
@@ -305,7 +360,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - suggest belowground components could improve green roof services
   - either direct (e.g. root traits) or indirect benefits (e.g. mycorrhizal associations)
   
-[@Doug2008] **Doug et al. 2005. Ryerson University - Toronto Report on Green Roof Benefits** 
+## [@Doug2008] 
+
+**Doug et al. 2005. Ryerson University - Toronto Report on Green Roof Benefits** 
 - some quantifiable monetary values from green roofs
   - stormwater flow reduction
   - impact on combined sewer overflow
@@ -328,7 +385,6 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - plant autecology could be different on a green roof; different environmental tolerances
 - native plants from non-local might not be genetically fit for a novel habitat
 - rare species have specific and complex habitat requirements; might not transplant well
-
 
 **Torrance. 2013 - Guidelines for Biodiverse Green Roofs**
 - multiple benefits in green roofs
@@ -357,30 +413,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - design to attract specific fauna - birds, bees, other insects
 - design to support adjacent - e.g., green roofs act as stepping stones for ravines
 
-[@Felson2013] **Felson et al. 2013. BioSci - including ecologists in urban infrastructure projects** 
-- green infrastructure projects do provide their intended ecosystem services
-- designers + land managers must construct ecosystems containing plant/animal/soil microbial communities 
-- meet performance criteria and that are resilient to disturbance 
-- requires systematic observation
-- short- and long-term monitoring programs are increasing in number
-- lack of ecological knowledge in green infrastructure 
-- ecologists can convert management questions into testable hypotheses 
-- design, construction, and monitoring of green infrastructure
-- case study: New York City Afforestation Project (NY-CAP)
-  - MillionTreesNYC initiative
-  - designed-experiment approach 
-  - provided a framework for collaboration of designers and ecologists
-  - factorial arrangement:
-    - tree species richness (six species versus two species)
-    - stand complexity (with shrubs and herbs versus without)
-    - soil amendment (with compost versus without)
-- three central themes:
-  - urban environmental stressors and plant health
-  - management practices and plant health
-- planted trees recruit future urban forest or invasive species? 
-- provides list of good recs for ecologists trying to get into urban infrastructure projects
+## [@McGuire2013] 
 
- [@McGuire2013] **McGuire et al. 2013. PLOS. Green roof and microbial communities**
+**McGuire et al. 2013. PLOS. Green roof and microbial communities**
 - first study to examine composition of fungal communities in green roofs and city parks
 - fungal communities in green roofs were distinct from each other and city parks
 - multiple factors could explain these findings:
@@ -390,7 +425,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - green roof could be an ideal model system for:
   - examining the biogeographical links in microbial communities
   
-[@Starry2016] **Starry et al. 2017. Parameterizing green roof stormwater balance models** 
+## [@Starry2016] 
+
+**Starry et al. 2017. Parameterizing green roof stormwater balance models** 
 - empirical models typically used to measure stormwater runoff
 - problems with empirical models: 
   - lack specific parameters + does not account for rainfall availability 
@@ -399,58 +436,79 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - hard to accurately measure plant evapotranspiration
 - Pennman-Monteith equation was robust for measuring ET
   - Utilizes crop coefficients
+  
+**Du et al. 2018. Green roof plant traits + drought survival** 
+ - green roof vegetation can improve storwater through transpiration
+ - high transpiration dries out soil faster, more rain in soil after flood 
+ - but, plants with high transpiration may not be the best at drought survival
+ - common species: sedum spp, great at survival but not the best at transpiration
+ - plant selection using: plant traits, different plant groups, habitat template 
+ - none have looked at climate of origin approach 
+ - shrubs are useful on green roofs: high water use, and high survival
+ - drought-survival: deep roots (water spenders) or stomatal close (water savers)
+ - selected shrub plants based on heat moisture index
+ - cool note: species were harvested on diff days based on "dry-down" rates
+ - measured mid-day water potential, SLA, LAR, RGR, and biomass
+ - large variation in trait responses across 20 spp - evolutionary origins
+ - high water-users were not very good at drought survival
+ - woody plants: large xylem vessels 
+  - good for water use, 
+  - but low cavitation resistance under low water potentials 
+ - leaf area adjustment was not the major driver of water use
+  - changes in leaf area % dd not lead to changes in ET  
 
-[@Rabbi2018] **Rabbi et al. 2018. New Phytologist**
-- rhizosheath and rhizosphere are the most dynamic zones of soil ecosystems
-- e.g., root exudates, mucilage, uptake of nutrients
-- physical architecture near soil is not well-studied; could be important for water dynamics
-- chose chickpeas as model systems; prevalent in agricultural crops; 
-- chose drought-tolerant and drought-sensitive cultivars
-- used non-destructive techniques to study water flow near rhizosphere
-- also measured root hair production, tap root growth rate and root mucilage
-- findings:
-  - root diameter was larger in drought-tolerants → larger rhizosheath mass 
-  - but no differences in root hairs, so most of the mass was prob mucilage
-- another interesting result: rhizosphere is heterogenous 
+# Background - green roofs + roots
 
-[@Bardgett2017] **Bardgett. 2014. Biology and Env - root traits and ecosystem functioning** 
-- evidence of importance of functional traits as drivers of belowground properties
-  - (1) resource economic spectrum
-  - (2) ecosystem properties depend more on traits than species per se
-- recent focus: using leaf traits to explain variation in soil microbial communities
-- role of roots
-  - (1) many functions - anchorage, resource uptake
-  - (2) interspecific root trait variation is high
-  - (3) belowground biomass > aboveground
-  - (4) root traits explain variation in N cycling
-  - (5) carbon - RLD, depth, lifespan, respiration, exudation
-  - (6) root exudates - can increase or decrease N availability
-  - (7) mycorrhizal traits - influence N cycling, AM or ECM fungi in trees
-  - (8) root traits - modify soil environment - compressing soil particles, soil stability
-  - (9) grasses had exploitative strategies
-- higher SRL, higher soil stability (species identity is important here)
-- plant soil-feedback
-  - (1) traits influence PSF - spp modify soil - how they respond to changes 
-  - (2) spp grew better in nutrient-rich soil conditioned by exploitative community
-  - (3) exploitative spp suffered most from negative feedback from soil biota
-  - (4) conservative spp benefited from soil biota
-  - (5) PSF depends on mycorrhizal type
-- AM trees - negative PSF
-- EcM trees - positive feedback
-- plant traits, soils and global change
-  - 'response-effect' framework
-  - rapid plasticity in roots in response to global change??
-  - high plasticity; changes in soil nitrogen supply, water supply, CO2 concentrations
+## [@Lu2014] 
 
-# Background - Green roofs + roots
+**Lu et al. 2014. Urban Forest Green - root morphology changes in green roofs"**
+- similar study to Lu et al. 2015. Ecol Eng 
+- looked at different watering regimes on root morphology of Sedum lineare
+- water treatments were irrigating every 2, 6 and 13 days
+- found that consistent watering had a positive effect on root growth + biomass
+- but, reduced irrigation produced thinner roots, which may help water uptake ability
+  - roots growing at lower water potential tended to be thinner
+  - root:shoot ratio increases during drought to explore more soil 
+  - larger roots may require more resources, result in poorer performance
+  - thinner roots with less lateral roots may favor water uptake after drought conditions
 
-[@Lu2014] **Lu et al. 2014. Urban Forest Green - root morphology changes in green roofs"**
+## [@Lu2015] 
 
-[@Lu2015] **Lu et al. 2015. Ecol Eng - drought + substrate effect on sedum roots in green roofs**
+**Lu et al. 2015. Ecol Eng - drought + substrate effect on sedum roots in green roofs**
+- green roof substrate
+  - deep substrate has higher water holding capacity + more stable soil temperature  
+  - but, substrate also contains roots: lack of info on root morphology wrt to drought survival
+  - root dehydrogenase activity used to determine drought survival; related to root mortality
+- only tested on a single Sedum species (Sedum lineare)
+  - apparently, verry popular in Shanghai China for green roofs 
+  - used three different substrate depths (4, 7, 10 cm) and two water irrigation treatments
+  - measured root dry mass, root fresh mass, shoot, total root length, root volume
+- found that shallow substrates (4 cm) had higher overall root growth 
+  - could be that deep substrates don't really benefit succulent species (shallow roots)
+  - drainage layer in green roof modules can aid in more water uptake through roots
+- but, 10 cm substrate allows for greater chance of prolonged drought survival
+  - better maintenance of plant water status and root activity under severe drought
+  - more subtrate can hold more water 
+  - smaller plants also use less water than big ones; so it can tolerate shallow depths
 
-# Background - Root traits
+## [@Ji2018]
+** Ji et al. 2018. Plant Soil - root foraging of sedum species in green roofs **
+- stressful environment limit root foraging in many plants
+- desert succulent species
+  - typically have shallow roots with wide lateral spread
+  - rely on periodic rainfall to obtain resources
+  - low loss of water during dry periods
+- green roof succulent species
+  - less extreme environments
+  - some spp have flexible photosynthetic strategies (e.g. CAM)
+- 
 
-[@Keddy1992] **Keddy. 1992. Func Eco - a practical approach to doing functional ecology** 
+
+# Background - root traits
+
+## [@Keddy1992] 
+
+**Keddy. 1992. Func Eco - a practical approach to doing functional ecology** 
 - three basic goals of functional ecology:
   - constructing trait matrices through screening
   - exploring empirical relationships among these traits
@@ -471,7 +529,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - ability to tolerate environmental extremes
   - ability to compete with neighbouring species
 
-[@Ma2018] **Ma et al. 2018. Nature - global evolution and root traits**
+## [@Ma2018] 
+
+**Ma et al. 2018. Nature - global evolution and root traits**
 - leaf economic spectrum for trait-based ecology; little is known about roots 
   - though SRL increased non-linearly with with decreasing diameter
 - woody: differences in diameter don’t have a large effect on SRL
@@ -480,7 +540,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - but sacrifices water conductance, tissue permanence + penetrate soil matrix
 - root diameter, SRL, mycorrhizal colonization was affected by evolutionary history 
 
-[@Li2015] **Li et al. 2015. Ecol Lett - decoupling leaf and hydraulic traits**
+## [@Li2015] 
+
+**Li et al. 2015. Ecol Lett - decoupling leaf and hydraulic traits**
 - functional traits help build models to predict vegetative responses to climate changes
 - two existing plant dimensions: leaf economic spectrum + hydraulic economic spectrum
 - these two plant dimensions should covary since both are involved in photosynthesis
@@ -488,7 +550,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - separate evolutionary time steps could explain this decoupling
 - decoupling gives more flexibility when exposed to environmental constraints
 
-[@Zobel2002] **Zobel and Zobel. 2002. J Ecol - Is root biomass important for competition?**
+## [@Zobel2002] 
+
+**Zobel and Zobel. 2002. J Ecol - Is root biomass important for competition?**
 - a rebuttal against Cahill’s remark about discarding root biomass for plant competition
 - can use shoot biomass a proxy for both aboveground + root biomass, only if predictable 
 - plant root:shoot ratio depends on degree of competition and which plants you pick
@@ -497,7 +561,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - impossible to understand plant dynamics without belowground systems
 - looking at roots is definitely hard and sometimes impossible; but it’s not boring
 
-[@Belluau2018] **Belluau and Shipley. 2018. PLOS ONE - soft traits vs. hard traits. Which is better?**
+## [@Belluau2018] 
+
+**Belluau and Shipley. 2018. PLOS ONE - soft traits vs. hard traits. Which is better?**
 - species lie along an environmental gradient should depend on both soft and hard traits
   - common gradient: variation in soil water
 - trait hierarchy: morphological < physiological
@@ -512,7 +578,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - develop extensive roots to look for water in soil
 - realized hydrological niches determined by trade-offs involved in water economy
 
-[@Schenk2002] **Schenk and Jackson. 2002. J Ecol** 
+## [@Schenk2002] 
+
+**Schenk and Jackson. 2002. J Ecol** 
 - predictions about climate, soil and plant dimensions in water-limited systems
 - assumption that roots have to grow deep to acquire resources
 - shallow roots are preferred over deep roots because:
@@ -528,7 +596,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - herbaceous plants had larger root systems in dry climates than humid ones 
 - sandy soils have a larger proportion of roots deep down in soil 
 
-[@Gould2016] **Gould et al. 2016. Ecol Lett - soil physical properties and biodiversity** 
+## [@Gould2016] 
+
+**Gould et al. 2016. Ecol Lett - soil physical properties and biodiversity** 
 - examine the effect of belowground traits on soil physical properties
 - lack of knowledge on how root drive soil stability, soil aggregation + soil strength
 - enhance processes such as resource uptake and nutrient cycling
@@ -549,7 +619,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - three soil core samples were taken in each plot 
   - using a 3.2 diameter and 10 cm depth soil core
 
-[@Erktan2018] **Erktan et al. 2018. Plant Soil - research advances in root traits and ecosystem functioning**
+## [@Erktan2018] 
+
+**Erktan et al. 2018. Plant Soil - research advances in root traits and ecosystem functioning**
 - notes are focused on the root structure and soil resource acquisition section
 - natural environments → strategies to acquire resources in heterogeneous conditions
 - which root traits are responsible for the largest water uptake??
@@ -565,7 +637,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - all roots, except the oldest, possess some uptake capacity; esp first-order roots
 - understudied traits: root hair density, mycorrhizal colonization, root anatomy  
 
-[@Carminati2017] **Carminiata et al. 2017. New Phytologist - root hairs affect soil water uptake** 
+## [@Carminati2017] 
+
+**Carminiata et al. 2017. New Phytologist - root hairs affect soil water uptake** 
 - Gardner (1960) assumed a constant rate of water flow from bulk soil to root surface
 - but, controversial findings about how root hairs affect water uptake
 - hypothesis: water can flow easily to root surface as soil hydraulic conductivity decreases 
@@ -577,7 +651,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - water in the pot was spatially heterogeneous
   - shrunken and rewetting of roots
 
-[@Smilauerova2002] **Smilaurea and Simauler. 2002. New Phyt - root morphology and soil heterogeneity**
+## [@Smilauerova2002] 
+
+**Smilaurea and Simauler. 2002. New Phyt - root morphology and soil heterogeneity**
 - trade-offs in resource foraging: precision ersus scale (Grime)
 - response of roots is often different grown as individuals versus competition
 - wanted to see how nutrient patchiness affects root morphology
@@ -592,7 +668,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - *Plantago*  had the least branched roots; formed compact roots 
 - root responses to increase nutrients don’t really depend on mycorrhizal association
 
-[@Dhiman2018] **Dhiram et al. 2017. Plant Soil - soil water uptake using neutron radiography** 
+## [@Dhiman2018] 
+
+**Dhiram et al. 2017. Plant Soil - soil water uptake using neutron radiography** 
 - classic methods to detect water uptake from roots: pot weight, soil water sensors 
 - direct measurements of soil water uptake is difficult; neutron radiography (imaging)
 - soil water dynamics differ based on evaporation, root density, soil type + light 
@@ -601,7 +679,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - fine roots and/or mycorrhizae fungi can fill soil pores (possible preferential flow???)
 - findings: Water content was greatest at the bottom of the pot; greatest root density
 
-[@Reich2014] **Reich. 2014. J Ecol - fast-slow economic spectrum**
+## [@Reich2014] 
+
+**Reich. 2014. J Ecol - fast-slow economic spectrum**
 - extends the world-wide leaf economic spectrum proposed by: stem, root and water (third key resource)
 - posits a general statement that: fast traits mean fast-growers, slowt traits mean slow-growers
 - resource acquisitive traits should have biophysical constraints across different plant organs
@@ -625,7 +705,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - canopy characteristics should influence light interception
   - magnitude of water fluxes needed to support canopy photosynthesis
 
-[@Kramer-Walter2016] **Kramer-Walter, K. R. et al. 2016. J Ecol** 
+## [@Kramer-Walter2016] 
+
+**Kramer-Walter, K. R. et al. 2016. J Ecol** 
 - attempt to find a stem-leaf-root coordination in plant
 - stem, leaf and root traits should correlated with one another in terms of resource acquisition
 - root traits drive multiple ecosystem processes and should exhibit multidimensionality
@@ -641,7 +723,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - discrepancy was probably caused by changes in nutrient resources (i.e P) 
   -… where high SRL is a preferred strategy in nutrient-depleted soil
   
-[@Mommer2012a] **Mommer and Weemstra. 2012. New Phyt**
+## [@Mommer2012a] 
+
+**Mommer and Weemstra. 2012. New Phyt**
 - provides comments on the root resource economic spectrum (RES)
 - argue that plant root traits should reflect similar trade-offs to the leaf economic spectrum:
   - (1) root biomass allocation varies across biomes
@@ -655,7 +739,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - water uptake is facilitated by a thin and dense root system
   - propose that belowground overyielding caused by spatial niche differentiation
 
-[@Wang2018] **Wang et al. 2018. Func Eco**
+## [@Wang2018] 
+
+**Wang et al. 2018. Func Eco**
 - used a large root trait database of 181 plant species 
 - both herbaceous and woody types
 - across 8 sites in China to find patterns of RES
@@ -668,7 +754,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - the authors barely discussed about the impacts of mycorrhizal association 
   - despite addressing its critical importance in root trait variation 
 
-[@Laliberte2017] **Laliberte. 2017. New Phyt**
+## [@Laliberte2017] 
+
+**Laliberte. 2017. New Phyt**
 - discusses promising role of fine roots in driving soil N acquisition in terms of 6 research avenues
 - highlights that ecologists should use standardized measurement protocols
   - to define and measure roots via a functional classification system  (i.e. <2mm diameter) 
@@ -681,7 +769,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - talks about environmental gradients affect aboveground +  belowground systems
 - predictions in belowground community lead to ecosystem-level consequences.
 
-[@Bergmann2017] **Bergmann et al. 2017. New Phytologist**
+## [@Bergmann2017] 
+
+**Bergmann et al. 2017. New Phytologist**
 - attempts to find linkages between aboveground and belowground traits
 - 97 traits (!!) from 141 grassland plant species in a greenhouse experiment
 - used random forest algorithms to find best predictive model 
@@ -692,7 +782,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - coarse roots: high diaspore mass → land near mother plant → AMF association
   - thin roots: low diaspore mass → escapes far away 
   
-[@Poorter1992] ** Poorter and Bergkotte. 1992. Plant Cell Environment - chem composition of 24 spp**
+## [@Poorter1992] 
+
+** Poorter and Bergkotte. 1992. Plant Cell Environment - chem composition of 24 spp**
 - plants are made of a bunch of chemical compounds; diff species have diff composition
 - RGR could be explained by chemical composition across many species
 - can be broken down into two sections:
@@ -706,7 +798,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - fast-growers and slow-growers use the same amount of glucose
 - overall: chemical composition may be more important RGR than carbon
 
-[@Taub1996] ** Taub et al. 1996. Func Eco - comparative root ecology **
+## [@Taub1996] 
+
+** Taub et al. 1996. Func Eco - comparative root ecology **
 - roots of only main axis and primary laterals efficient at resource uptake
 - but larger diameter means high C cost
 - dichotomous root systems have higher intraplant competition
@@ -726,7 +820,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - possible redundancy in their root system
   - low investment costs
   
-[@Ryser2006] **Ryser. 2006. Plant Soil - the mysterious root lengths (and some drawbacks)** 
+## [@Ryser2006]
+
+**Ryser. 2006. Plant Soil - the mysterious root lengths (and some drawbacks)** 
 - commentary focus on specific root length (SRL) - an important functional trait
 - characterizes the economical aspects of a root system
   - stating the costs––mass––per potential return––root length
@@ -782,7 +878,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - try to understand variation in investigated traits in terms of the whole root system
   - understand how your digital analysis system conducts the measurements
 
-[@Johnson2006] **Johnson and Lehmann, 2006 - root preferential flow**
+## [@Johnson2006] 
+
+**Johnson and Lehmann, 2006 - root preferential flow**
 - root system spatially partitions water fluxes into distinct pathways
 - trees modify water cycling; channeling infiltrating water along roots
   - makes preferential flow pathways - formed by means of root action on bulk soil
@@ -805,7 +903,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - larger fluxes found in continuous voids + along structural discontinuities
   - created by growing tree roots that apply compressive forces to the soil combined with the cementing action of substances exuded by roots
 
-[@Ghestem2011] **Ghestem et al. 2011. BioSci**
+## [@Ghestem2011] 
+
+**Ghestem et al. 2011. BioSci**
 - water flows through two domains in soil:
   - soil matrix - mixture of saturated and unsaturated fine pores
   - preferential flow pathways - single or interconnected macropores
@@ -822,7 +922,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - longer and wider root channels route water away from unstable zones
   - root clusters, fibrous and shallow roots are important too 
   
-[@Silvertown2015] **Silverton et al. 2015. J Ecol - hydrological niches in terrestrial plant communities**
+## [@Silvertown2015] 
+
+**Silverton et al. 2015. J Ecol - hydrological niches in terrestrial plant communities**
 - plants use water for transpiration and photosynthesis 
 - subtle overlooked role of water to determine niche differentiation
 - hydrological niche segregation:
@@ -838,7 +940,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - requires steep water potential gradient or high hydraulic conductance
   - talks about embolism and cavitation [not super relevant to green roofs]
 
-[@Violle2007] **Violle et al. 2007. Oikos - definition of functional traits** 
+## [@Violle2007] 
+
+**Violle et al. 2007. Oikos - definition of functional traits** 
 - traits: predictors of organismal performance
 - confusion on the underlying concepts of traits
 - effect traits affect energy flow + chemical cycling
@@ -851,7 +955,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - definition of trait 
   - "physiological or phenological feature measurable at the individual level, from the cell to the whole-organism level without reference to the environment or any other level of organ"
 
-[@Fort2017] **Fort et al. 2017. Func Eco - water uptake in mediterranean ecosystems** 
+## [@Fort2017] 
+
+**Fort et al. 2017. Func Eco - water uptake in mediterranean ecosystems** 
 - conducted an experiment to determine the rooting strategies with 12 Mediterranean plant species 
 - 'fast-acquisitive' and 'slow-conservative' plants under varying levels of water availability
 - findings: 
@@ -859,7 +965,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - 'slow' plants with coarse roots took up less water and maintained water-uptake
 - some comments: more stele = more hydraulic conductivity = easier for water transport to stems 
 
-[@Valverde-Barrantes2015] **Valverde-Barrantes et al. 2015. Func Eco - phylogenetics and root structure** 
+## [@Valverde-Barrantes2015] 
+
+**Valverde-Barrantes et al. 2015. Func Eco - phylogenetics and root structure** 
 - looked at phylogenetic structure of root traits across 34 temperate tree species
 - a large % of belowground traits were phylogenetically structured compared to leaf traits.
 - leaf traits could be more influenced by environmental conditions + life-history strategies
@@ -871,7 +979,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - leaf and root traits were decoupled except for N 
   - roots have more trait combinations for C maintenance and construction costs
   
-[@Larson2016] **Larson et al. 2016. New Phyt - root traits under different water availabilities** 
+## [@Larson2016] 
+
+**Larson et al. 2016. New Phyt - root traits under different water availabilities** 
 - greenhouse study examining root traits under different water availability 
 - 18 plant species in California coastal sage scrubs
 - trait differences varied across resource availability; 
@@ -885,7 +995,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - (1) woody species were 'conservative'
   - (2) large variation between grasses and forbs
   
-[@Perez-Ramos2012] **Perez-Ramos et al. 2012. J Ecol - whole-plant spectrum under an environmental gradient**
+## [@Perez-Ramos2012] 
+
+**Perez-Ramos et al. 2012. J Ecol - whole-plant spectrum under an environmental gradient**
 - resource availability drives plant selection - high resources versus low resources
 - many abiotic and biotic factors act on plant species; presents a multidimensional space
 - trait-environment linkages - a segway into the whole-plant economic spectrum
@@ -898,7 +1010,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - study shows a parallel link between both root and leaf economic spectrum
 - environmental variation promoted different species based on soil moisture
 
-[@Freschet2017] **Freschet et al. 2017. J Ecol - climate and root traits** 
+## [@Freschet2017
+
+**Freschet et al. 2017. J Ecol - climate and root traits** 
 - study that examined fine-root variation in 1115 species from a global dataset
 - presents some generalizations on root trait syndromes across different ecosystems
 - fine roots relate to ecosystem processes
@@ -908,7 +1022,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - climatic and soil variables determine fine-root trait variation
   - e.g. tropical trees have higher SRL than temperate
   
-[@Huang1993] **Huang et al. 1993. New Phytologist - hydraulic conductivity + soil water in cacti**
+## [@Huang1993] 
+
+**Huang et al. 1993. New Phytologist - hydraulic conductivity + soil water in cacti**
 - water uptake in wet soils: root hydraulic conductivity + axial hydraulic conductivity
 - driven by water potential differences; how does it change under drought, rewetting?
 - looked at barley and desert succulents 
@@ -918,7 +1034,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - new lateral roots come with mucilage in desert succulents, useful in drier soils
   - root hydraulic conductivity increases as axial hydraulic conductivity increases
 
-[@Ahmed2014] **Ahmed et al. 2014. Plant Func Biol - Mucilage to increase water uptake**
+## [@Ahmed2014] 
+
+**Ahmed et al. 2014. Plant Func Biol - Mucilage to increase water uptake**
 - having traits that increase water uptake can help plant survive drought
 - mucilage could be such an important trait; a “polymeric gel” exuded from the plant roots
   - increases water content at rhizosphere at any water potential
@@ -933,7 +1051,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - expected to favour water uptake in dry soils
 - mucilage amount is probably different among different species
 
-[@Iversen2015] **Iversen et al. 2015. New Phytologist - habitat template for green roofs: arctic tundra**
+## [@Iversen2015] 
+
+**Iversen et al. 2015. New Phytologist - habitat template for green roofs: arctic tundra**
 - Arctic tundra; short-statured plant communities; harsh environmental conditions
 - [Could act as a habitat template for green roofs; similar to coastal barrens?]
 - [different than green roofs since permafrost can act as drought conditions]
@@ -947,7 +1067,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - temperature plays a big role; freezing temps restricts plant growth + initiation
 - plants have root traits that acquire a pool of limited nutrients, similar to other biomes
 
-[@Comas2004] **Comas and Eissentat. 2004. Func Eco - link fine roots to maximum growth potential** 
+## [@Comas2004] 
+
+**Comas and Eissentat. 2004. Func Eco - link fine roots to maximum growth potential** 
 - a preliminary paper on examining root trait variation for the existence of an RES
 - morphological and architectural root traits have been studied, but not physiology 
 - root ecological strategies should be linked to evolutionary history (hence, PICs)
@@ -958,7 +1080,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - it changes with root age, soil microsite differences and ontological stages
   - so sampling in natural ecosystems is a problem
   
-[@Reynolds2017] **Reynolds et al. 2017. Tree Physio - geneXtraitXenvironment for hydraulic niches** 
+## [@Reynolds2017] 
+
+**Reynolds et al. 2017. Tree Physio - geneXtraitXenvironment for hydraulic niches** 
 - functional traits in four tree species; related to hydraulic niches; moisture gradient
 - drought-resistance strategies → involves multiple functional traits + phenotypic plasticity
 - multidimensional nature of traits: related to both plant carbon and water economy
@@ -989,15 +1113,21 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - apparently, not enough aquaporins where water is forced into roots??
 - aquaporins might facilitate cell-level water relations for rapid tissue growth
 
-[@Hernandez2010] **Hernandez et al. 2010. Plant Ecol** 
+## [@Hernandez2010] 
+
+**Hernandez et al. 2010. Plant Ecol** 
 - looked at seven shrub species in water-limited Mediterranean ecosystems
 - SRL was positively correlated with soil exploration + specific hydraulic conductance 
 
-[@Huang1993] **Huang and Eissenstat. 2000. J Amer Soc Hort Sci**
+## [@Huang1993] 
+
+**Huang and Eissenstat. 2000. J Amer Soc Hort Sci**
 - looked at three citrus rootstock species
 - SRL was correlated with root hydraulic conductivity
 
-[@Rieger1999] **Rieger and Litvin. 1999. J Exp Bot**
+## [@Rieger1999] 
+
+**Rieger and Litvin. 1999. J Exp Bot**
 - looked at five different species: Asparagus, Dendrobium, Peach, Soybean
 - again, root diameter was negatively corrected with root hydraulic conductivity 
 
@@ -1008,7 +1138,6 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - again, SRL was positively correlated with radial hydraulic conductivity 
 
 **Hodge et al. 2006. Plant and Soil - soil exploration strategies between monocots + dicots**
-
 - soil: complex medium, high variability
 - root system is an evolutionary response to resource supply + constraints
 - root architecture addresses shape of root system and its structure
@@ -1051,7 +1180,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - which parts of the root system are active? depends on root diversity
   - morphologically, large differences among roots occur due to root diameter
 
-[@Freschet2017a] **Freschet and Roumet. 2017. Func Eco - functional consensus of root traits** 
+## [@Freschet2017a] 
+
+**Freschet and Roumet. 2017. Func Eco - functional consensus of root traits** 
 - aboveground plant components: 
   - light interception,  
   - size, 
@@ -1083,7 +1214,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - SRL (total): high volume of soil explored; high exploitation of a given volume of soil per unit biomass
   - SRL (1–3rd): represents higher capacity of roots to exploit soil patches 
   
-[@Roscher2018] **Roscher et al. 2018. Ecology - trai origins affect biodiversity in grasslands**
+## [@Roscher2018] 
+
+**Roscher et al. 2018. Ecology - trai origins affect biodiversity in grasslands**
 - effects of trait diversity and community-weighted trait values depend on trait origin??
 - some trait values are taken from sources other than “actually studied plant communities”
 - tested if trait values (CWM’s, FD) differed from four origin contexts
@@ -1094,14 +1227,18 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - four functional groups examined; forbs, grasses, herbs and legumes
 - trait values do vary widely in extent of trait origin
 
-[@Comas2012] **Comas et al. 2012. Int J Plant Sci**
+## [@Comas2012] 
+
+**Comas et al. 2012. Int J Plant Sci**
 - different root properties are important for getting immobile and mobile soil resources 
 - roots can easily access mobile water if there is increased surface and local proliferation
 - species with thinner roots tend to live in xeric habitats
 - SRL, hydraulic conductivity and photosynthetic rates were all correlated 
 - traits efficiency depends on morphology, functional traits, and spatial distribution in soil 
 
-[@Freschet2010] **Freschet et al. 2010. J Ecol - leaf-stem-root coordination in subarctic ecosystem**
+## [@Freschet2010] 
+
+**Freschet et al. 2010. J Ecol - leaf-stem-root coordination in subarctic ecosystem**
 - looked at leaf-stem-root coordination among 7 different plant types in subarctic 
 - overall, it seems like stem-leaf-coordination exists in this ecosystem
 - suggests that abiotic and biotic pressures are similar in magnitude for all plant systems
@@ -1111,7 +1248,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - (3) findings are constrained within a single spatial scale 
 - local factors are king here (e.g., soil depth, biotic factors, succession)
 
-[@Roumet2016] **Roumet et al. 2016. New Phyt - RES and the carbon economy**
+## [@Roumet2016] 
+
+**Roumet et al. 2016. New Phyt - RES and the carbon economy**
 - examined if there was a trade-off in root ecological strategies in the carbon economy
 - based off respiration and decomposition
   - predict that species with:
@@ -1127,17 +1266,422 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - while shrubs were more conservative
 - found that average root diameter was not a useful trait for the root economic spectrum
 
-[@Zhou2018] **Zhou et al. 2018. J Ecol - TES and phylogenetic structure**  
+## [@Zhou2018] 
+
+**Zhou et al. 2018. J Ecol - TES and phylogenetic structure**  
 - root economic spectrum; 15 species (four phylogenetic clades); temperate steppes
 - looked at root traits and function (respiration) as well
 - found that phylogenetic clades tend to have similar trait syndromes
 - root diameter was positively correlated with respiration rate and RGR, but not SRL
 - multidimensional nature of root traits through PCA
 
+## [@Eshel2013]
+
+**Eshel & Beeckman. 2001. Roots: the Hidden Half - textbook on general root stuff** 
+- roots are a biological system comprised of different components
+  - coarse roots: tap roots, functions as an ‘anchor’ 
+  - fine roots: 
+    - lateral branches, active for water use, most of surface area
+    - tend to increase hydraulic conductivity + increase transport efficiency
+    - higher turnover rate than coarse roots, higher nutrient concentrations
+  - higher-order roots: thicker roots, transport and storage functions
+  - lower-order roots: N-rich tissues, mycorrhizal colonization and perform soil resource uptake
+  - branching structure of root systems: geometry can be represented as tree (# of links, length of links)
+  - distribution of branches within the system: branching angles (radial angle, branch angle)
+  - relative diameter – rate of increase of link diameter with magnitude
+- functional implications of root architecture 
+  - cost: carbon - currency to determine cost-benefit analysis of root architecture
+  - construction
+    - carbon used for structure: ash-free dry weight of the root system
+    - carbon used for respiration: linearly related to growth rate
+- SRL: closely related to tissue density
+  - construction cost is proportional to biomass
+  - a function of tissue volume 
+  - root diameter contributes as its square
+- transport
+  - transport-relate costs
+  - driving force for transport, which increase with distance
+  - xylem: cost arises from need to maintain water potential gradient
+  - phloem: costs arises from transport distance
+- major determinants of transport efficiency
+  - lengths of the interior and exterior links
+- resistance they offered to transport
+  - if resistance == link lengths, transport efficiency is function of path length
+  - still, root resistance is important
+  - diameter of links declines with path length + resistance increases
+- soil exploration and exploitation
+  - complicated subject: large variation in soil (space + time)
+  - resource vary in mobility
+- roots are generally more abundant in surface soils than deeper horizons
+  - CAM succulents – superficial root systems
+  - deciduous plant species – deeply penetrating tap roots
+- dichotomous systems vs herringbone systems
+  - dichotomous: easy to construct and maintain, good at transporting immobile resources
+  - herringbone: expensive to build, good at transporting mobile resources
+- anchorage 
+  - two situations for plant anchorage
+  - simple upward force – e.g. grazing
+  - horizontal force is exerted on the stem – e.g. wind
+  - what affects plant anchorage? root quality, distribution, branching pattern
+  - finely branched regions play little role in anchorage
+  - proximal parts of roots are responsible anchorage strength
+  - important: safely ignore anchorage when interpreting resource acquisition
+- plasticity of root Systems 
+  - large heterogeneity in belowground traits
+  - different components of root systems should exhibit phenotypic plasticity 
+  - opportunists should show high phenotypic plasticity as they try to exploit available resource pulses 
+  - large range of possible root structures
+- root-shoot relations 
+  - species will show marked differences in biomass distribution in a fashion related to differences in their 
+    - habitat affinities
+      - functional balance in shoots and root systems should exists 
+      - depends on resource supply + species identity
+    - shade-tolerants display shoot biomass allocation to develop bigger leaves
+    - plants in limited soil resources should allocate more resources to roots
+  - biomass distribution is a function of both biomass allocation and turnover
+    - root mass fraction
+      - similar definition to root:shoot ratio
+      - preferred because of statistical reasons
+  - water
+    - invest in excessive amount of roots prior to water shortage
+    - may be adapted to periodic and unpredictable drought
+  - plants should plastically shift biomass allocation to have a higher resource gain
+    - under a new situation than would otherwise occur without such a shift
+    - other traits influence carbon gain other than biomass allocation
+    - traits that enhance resource gain might not necessarily enhance survival
+  - variation in root-shoot relationship among species
+    - for forests, plants growing under lower nutrient and water availability:
+      - tend to have a greater RMF
+      - greater shift toward fine-root than toward foliage production
+  - root life span, efficiency, and turnover 
+    - roots have a life history: from birth to death
+    - stronger root competition than shoot competition
+    - root demography also influences ecosystem processes – i.e. BNPP
+  - variation in root life-span 
+    - median life span of the finest roots can range from <20 days in fast growing tree
+    - to >1 year in slow-growing forest trees
+    - variation likely caused by environmental conditions and species identity
+  - patterns of variation among species 
+    - plant species of low growth rates tend to have long root lifespan
+    - influence of root diameter and root order 
+    - root order describes the position of a root in the branching pattern
+    - variation in root life-spans is associated with the size and order of the roots
+- value of cost-benefit models applied to roots
+  - benefit: nutrient and water uptake
+  - cost: material and energy required to build and maintain roots
+  - if plants were to deploy roots to maximize ROI
+    - benefit: cost ratio should be maximized
+    - cost: carbon content + respiration
+      - high initial C investment to build roots
+      - cost of respiration fluctuates
+      - respiration declines with age based on metabolic activity
+      - always be costlier to rebuild roots than to keep old ones
+      - unless there is declining uptake capacity of older roots
+- abiotic factors influencing root life-span
+  - soil moisture
+  - reduces C allocation to roots, root respiration + nutrient uptake
+  - increases root mortality
+  - adaptation: species with fine lateral roots --> high hydraulic conductivity --> shed roots in dry soils, regrow in wet soil
+  - soil temperature: high temperatures --> shorter root life-span
+  - soil nutrients: conflicting results on the effects of soil nutrients on root life-span
+- biotic factors influencing root life-span
+  - available photosynthates
+  - factors that reduce shoot C acquisition reduces root longevity
+  - mycorrhizal Fungi
+  - If mycorrhizal roots acquire more nutrients for less carbon
+  - then the plant may actively maintain + defend mycorrhizal fungi
+
+## [@Rabbi2018] 
+
+**Rabbi et al. 2018. New Phytologist**
+- rhizosheath and rhizosphere are the most dynamic zones of soil ecosystems
+- e.g., root exudates, mucilage, uptake of nutrients
+- physical architecture near soil is not well-studied; could be important for water dynamics
+- chose chickpeas as model systems; prevalent in agricultural crops; 
+- chose drought-tolerant and drought-sensitive cultivars
+- used non-destructive techniques to study water flow near rhizosphere
+- also measured root hair production, tap root growth rate and root mucilage
+- findings:
+  - root diameter was larger in drought-tolerants → larger rhizosheath mass 
+  - but no differences in root hairs, so most of the mass was prob mucilage
+- another interesting result: rhizosphere is heterogenous 
+
+## [@Bardgett2017] 
+
+**Bardgett. 2014. Biology and Env - root traits and ecosystem functioning** 
+- evidence of importance of functional traits as drivers of belowground properties
+  - (1) resource economic spectrum
+  - (2) ecosystem properties depend more on traits than species per se
+- recent focus: using leaf traits to explain variation in soil microbial communities
+- role of roots
+  - (1) many functions - anchorage, resource uptake
+  - (2) interspecific root trait variation is high
+  - (3) belowground biomass > aboveground
+  - (4) root traits explain variation in N cycling
+  - (5) carbon - RLD, depth, lifespan, respiration, exudation
+  - (6) root exudates - can increase or decrease N availability
+  - (7) mycorrhizal traits - influence N cycling, AM or ECM fungi in trees
+  - (8) root traits - modify soil environment - compressing soil particles, soil stability
+  - (9) grasses had exploitative strategies
+- higher SRL, higher soil stability (species identity is important here)
+- plant soil-feedback
+  - (1) traits influence PSF - spp modify soil - how they respond to changes 
+  - (2) spp grew better in nutrient-rich soil conditioned by exploitative community
+  - (3) exploitative spp suffered most from negative feedback from soil biota
+  - (4) conservative spp benefited from soil biota
+  - (5) PSF depends on mycorrhizal type
+- AM trees - negative PSF
+- EcM trees - positive feedback
+- plant traits, soils and global change
+  - 'response-effect' framework
+  - rapid plasticity in roots in response to global change??
+  - high plasticity; changes in soil nitrogen supply, water supply, CO2 concentrations
+  
+## [@Eshel2013]  
+
+** Soil water uptake and water transport through root systems **
+- to fix one molecule of CO2 the plant will typically transpire 200–400 molecules of water
+= depending on humidity and on stomatal conductance (Raven, 1984)
+- that plants are generally more productive when grown in high humidity 
+  - indicates that the cost of transpiration outweighs any direct benefits 
+  - in terms of leaf cooling or nutrient transport (Salisbury and Ross, 1992)
+- to obtain an adequate supply of water…
+  - plants invest a considerable portion of their resources 
+-  in building/maintaining uptake and transport tissues that fix practically no CO2
+- the size of this investment depends on plant and habitat:
+  - in cool desert shrubs, root biomass can be 3X shoot biomass
+  - in submerged aquatic plants, root biomass may be as little as 6% of the shoot
+  - successful competitor will achieve maximum water supply for a given investment
+- two axioms
+  - plant water use cannot exceed the supply capacity of the soil-to-leaf pipeline
+  - selection cause plants to max water supply per investment in transport tissue
+- mechanisms of water uptake
+  - transpiration pull –
+    - water evaporation from the surfaces of mesophyll cells to the atmosphere
+    - creates a negative pressure at the top of a plant
+    - resulting surface tension causes a negative pressure in xylem 
+    - that pulls the water from the roots and soil
+    - requires that vessels transporting the water are very small in diameter
+    - otherwise cavitation would break the water column
+- root pressure -
+  - if ψR < ψS,  usually due to high concentrations of solute
+  - water can move by osmosis into the root from the soil
+  - creates positive pressure that forces sap up the xylem towards the leaves
+  - root pressure is highest in the morning before the stomata open 
+  - and allow transpiration to begin
+- cohesion-tension theory
+  - darcy’s Law: E = -K(ψ)*(dψ/dx) (Eshel & Beeckman, 2013)
+  - E: transpiration rate per leaf area, can be predicted from:
+    - root-to-leaf area ratio (AR/AL)
+    - root depth profile
+    - soil water profile (ψm)
+  - K: hydraulic conductivity per leaf area, depends on (3):
+    - (1) soil texture
+    - (2) tissue properties
+    - (3) cavitation sensitivity
+  - K declines with increasing negative ψ
+  - Ecrit – max hydraulically possible transpiration rate
+    - provides info on:
+    - max water extraction capability (area under WU envelope)
+    - permanent wilting point (ψm below which water uptake ceases)
+  - pressure gradients move water through xylem results from:
+    - positive pressures at the base of the plant;
+    - negative pressure at the top of the plant
+ - water at the top develops negative hydrostatic pressure
+  - pulls through H2O @ xylem due to tension @ leaf cell wall
+  - water is lost to the air
+  - forms curved air-water interfaces in cell walls
+- more water is lost; increases negative pressure
+- cohesion-tension theory of sap ascent
+  - how water can move through plants w/o expending metabolic energy
+  - xylem transport of water in trees face physical challenges
+    - (1) water under tension transmit an inward force to xylem walls
+    - (2) water under tension is in a physically metastable state
+  - high activation energy for liquid-vapor phase
+  - xylem structure minimizes presence of nucleating sites
+  - water movement from the leaf to the atmosphere From leaf to atmosphere
+    - (1) water pulled from xylem to mesophyll
+    - (2) water vapor exits leaf through stomatal pore (diffusion)
+  - transpiration from leaf depends on
+    - (1) cwv(leaf) – cwv(air)
+    - (2) diffusional resistance ®
+    - (3) leaf stomatal resistance (rs)
+    - (4) leaf boundary layer resistance (rb)
+  - stomatal control couples leaf transpiration to leaf photosynthesis
+    - if plants prevent water loss, then they exclude CO2
+    - [CO2] gradient is much smaller than [H2Ov] gradient
+      - very little CO2 in air
+      - relatively high [water vapor] within leaf
+      - when soil water is abundant, then stomatal pores will close
+  - transpiration ratio
+    - measures relationship between water loss and carbon gain
+    - defines as amount of water transpired by plant/amount of CO2 assimilated by photosynthesis
+    - the inverse is usually defined for water-use efficiency
+- plant-soil-atmosphere continuum
+  - movement of water through plants from areas of high to low ψ
+  - Ψsystem = Ψtotal = Ψs + Ψp + Ψg + Ψm
+  - Ψsoil > Ψroot > Ψstem > Ψleaf > Ψatmosphere
+  - low water potential of atmosphere + higher water potential inside leaves
+  - leads to a diffusion gradient across the stomatal pores of leaves
+  - drawing water out of the leaves as vapour
+  - as water vapour transpires out of the leaf
+    - further water molecules evaporate off the surface of mesophyll cells
+    - replace the lost molecules since water in the air inside leaves
+    - maintained at saturation vapour pressure
+  - water lost at the surface of cells is replaced by water from the xylem
+    - due to cohesion-tension properties of water 
+  - plants pulls water molecules through xylem from the roots toward leaf
+- growth-induced water uptake
+  - growing cells initiate water movement by a plastic yielding of their walls
+  - causes a drop in cell turgor +  Ψw
+  - draws water out of the apoplast + creates same capillary pressure as transpiration pull 
+  - (but from water movement to cells rather than atmosphere)
+- osmotic uptake
+  - accumulation of ions in apoplast of stele creates a Ψo gradient 
+  - across endodermis
+  - drawing water into the root stele
+  - creates a positive pressure that pushes water up xylem 
+  - … and drip from foliar hydathodes.
+
+** Role of roots in soil water uptake**
+- root systems have these useful traits for role as collectors and conductors of water
+  - root length – soil exploration
+  - root surface area - contact with soil water pores, hydraulic conductivity
+- root xylem is much more efficient than stem xylem
+  - conductivities per unit xylem are over 4X those of shoots
+  - enables relatively thin roots and minimal taper with length
+  - minimizes cost of production and maintenance
+- multiple pathways as water travels across primary root to xylem
+  - symplastic: water flow from epidermis to root xylem through living cells
+  - apoplastic – water moves through cell walls
+
+** Limitations on transpirational water supply **
+- darcy’s law as a “supply function”
+- Fick’s law as a “demand function”: E = gL∆w
+  - E = leaf area-specific transpiration rate
+  - GL = leaf-specific stomatal conductance
+  - ∆w = leaf-air mole fraction differences
+- properties of K and Ψw limit the action of stomata
+  - K is a direct function of Ψz
+- a point of diminishing return is reached due to a declining K
+- beyond maximum point, K will drive to zero – “weak link’ in continuum
+- Darcy’s law has limitations that constrain stomatal regulation of water use
+- conclusion: demand cannot exceed supply
+
+** Behaviour of hydraulic conductivity **
+- limitation of water uptake depends:
+  - on how it influences the total bulk soil-leaf-conductance (t1)
+  - t1: represents integral of K wrt distance along the soil-to-leaf flow path
+  - expressed as the volume flow rate per ∆Ψ from bulk soil to foliage
+- soil hydraulic conductivity 
+  - soil K – volume flow rate per (dψ/dx) per cross-sectional area of soil
+  - as water is pulled from soil due to transpiration, Ψm drops
+  - capillary forces fail and water in the soil pores is replaced by air
+  - as the pores empty, fewer are available to conduct water, and K drops.
+- response of K to declining Ψm is immediate
+  - depends on distribution of pore sizes
+  - sandy soil: uniform large pore channels --> higher K when saturated; plummets rapidly with Ψm
+  - fine soils: wider range of pore sizes --> lower saturated K --> maintain K over wide negative
+  range of Ψm
+- soil-root pathway can be divided into two components
+  - rhizosphere conductance
+    - flow path across cylindrical sheath of soil over 3mm thickness around root
+    - high E causes steepen Ψ gradients and lower conductance
+    - low AR/AL steepen Ψ gradients
+    - transpiration H2O is forced to cross a smaller surface area as it moves into roots
+ - pararhizal conductance
+  - flow path towards the rooting zone in the bulk soil
+- xylem hydraulic conductivity 
+  - xylem K - volume flow rate per ψp/dx per leaf area 
+  - as ψp drops, xylem conduits cavitate
+  - emptying their water and becoming embolized and nonconductive
+- root pressure can reverse xylem cavitation 
+  - as long as transpiration is low and soil ψw is not too negative
+  - in absence of cavitation, the total resistance to flow in xylem 
+  - can account for 10-40% of total soil-to-leaf resistance
+  - root depth/aboveground size are important in xylem resistance
+
+**Radial flow path through root tissue**
+- radial conductance
+  - the narrower the root cortex, the higher tends to be the radial conductance
+  - often measured on the relatively short excised root tips 
+  - where the axial xylem conductance can be factored out
+- conductance increases from early morning to midday before falling off again later
+- transpiration in the morning shifts the driving force for uptake from osmosis to pressure
+- drop in root conductance may be due to water draining from extracellular spaces in root cortex 
+  - as ψw  becomes more negative – reduces area for apoplastic water flow
+- root uptake capability can also be affected by solute concentration
+  - as solute levels increase in the rhizosphere and cortical apoplast
+  - solute drag and reduction of the driving force would be prominent 
+  - (especially in saline or hyper fertilized soils)
+
+** Predicting the weak-link in the continuum **
+- AR/AL  
+- low AR/AL: 
+  - hydraulic failure occurs in the rhizosphere owing to a extremely steep Ψm 
+  - cuts off access to bulk soil water; reduces water extraction potential
+- high AR/AL: water extraction potential increases to a plateau; 
+  - hydraulic failure shifts from roots to xylem; no longer an advantage to increasing AR/AL
+  - threshold for AR/AL required to max water extraction from a drying soil; 
+  - highly dependent on soil type
+- coarser soils: h
+  - higher AR/AL threshold; soil type has a sensitive K(Ψ) function 
+  - higher root surface area is required to keep Ψm gradient in the rhizosphere 
+  - from triggering critically low soil-root conductance
+- xlem is predicted to be the weak link in the continuum 
+  - whether the failure occurs in the root or shoot xylem depends on the K(Ψp) function 
+  - (but much more sensitive in roots)
+- in this case, the point of failure in the xylem appears to depend on Ψm of bulk soil
+  - when Ψm is less negative under wet conditions, failure may occur in the shoot system
+  - when Ψm becomes more negative under drought, failure can shits to the root xylem
+- roots may be acting as a hydraulic fuse
+  - smaller roots are more vulnerable to cavitation
+  - smaller roots may die when exposed to drought, 
+  - but smaller roots but can be regrown when soil re-wets (small carbon cost)
+- these peripheral parts are more easily replaced
+- failure occurs in coordination in fine roots and minor branches
+
+# Background - soil science
+
+## [@Tarboton1982]
+
+** Rainfall run-off processes - Ch4 soil properties **
+- water can move through soil because it is a porous medium
+- matrix of solid granular particles + voids filled with water/air
+- some key properties of soil 
+  - air porosity - number of voids per volume unit 
+  - volumetric soil moisture content - volume of water per total volume
+  - soil particle density - weighted average density of mineral grains in soil
+  - soil bulk density - dry density of soil 
+- flow of water through soil is determined by size and shape of pores
+- can plot a cumulative frequency plot of grain diameter versus weight fraction
+- steeper slopes == uniform soil grain size distribution
+- particle size distribution is governed by soil texture 
+  - a mixture of clay, silt and sand
+  - clay soil - diameter of less than 0.002 mm
+  - silt soil - diameter range of 0.002 to 0.05 mm
+  - sandy soil - diameter range of 0.05 to 2 mm
+- macroscopic scale: flow through porous medium in one direction - Darcy’s law
+  - flow of rate Q is proportional to hydraulic conductivity K
+  - hydraulic conductivity - size and tortuosity of pores, viscosity, density 
+  - but, flow rate can be multidimensional … makes things a bit more complicated
+- small pores hold more water than large pores
+  -  higher surface tension induced in smaller pores around pore perimeter
+- at some point, downward drainage has to “materially cease”
+  - at this point, the amount of water remaining in soil - field capacity
+  - no inherent definition of what “materially cease” really means
+  - for sandy and loamy, three days after saturation is a decent rule of thumb
+  - can define field capacity as moisture content corresponding to a pressure head
+- in natural ecosystems, water can be removed from saturated soil by:
+  - direct evapotranspiration
+  - plant uptake
+  - note: plants cannot exert suctions stronger than ~15000cm
+
 # Methodology: root sampling 
 
-[@Perez-Harguindeguy2013] **Pérez-Harguindeguy et al. 2013. Austr J Botany**
+## [@Perez-Harguindeguy2013] 
 
+**Pérez-Harguindeguy et al. 2013. Austr J Botany**
 - root mass fraction
   - distribution of biomass to roots
   - best way is to look at turnover rates; but it's time-consuming
@@ -1164,7 +1708,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - lateral extent
   - intensity of exploration
 
-[@Pierret2013] **Pierret et al. 2013. Plant Soil - using IJ_RHIZO**
+## [@Pierret2013] 
+
+**Pierret et al. 2013. Plant Soil - using IJ_RHIZO**
 - talks about the potential use of a free open-source software "IJ_RHIZO",
   - compares both root length and average root diameter 
 - to test if the Kimura IJ_RHIZO is unbiased compared to Tennant WinRHIZO
@@ -1174,7 +1720,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - advantage of IJ_Rhizo is that it provides the root radius distribution
 - WinRHIZO uses TIF images while IJ_Rhiz uses JPEG
 
-[@Bouma2000] **Bouma et al. 2000. Plant Soil - recs for scanning root traits** 
+## [@Bouma2000] 
+
+**Bouma et al. 2000. Plant Soil - recs for scanning root traits** 
 - specific root length = ability for plants to explore soil + resource uptake
 - measuring root length can take some time; requires faster methods
 - we can automate this measurement, but it’s still sensitive to proposed parameters
@@ -1191,7 +1739,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - scanning resolution (400 dpi) 	
   - scanning threshold 
   
-[@Birouste2014] **Birouste et al. 2014. Plant Soil** 
+## [@Birouste2014] 
+
+**Birouste et al. 2014. Plant Soil** 
 - tissue density - “amount of structural material invested by unit of volume”
 - low-dense tissue means fast growth; rapid expansion with low carbon cost
 - but.. low root lifespan and vulnerable to pathogens + herbivory 
@@ -1209,7 +1759,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - need to account for water saturation when measuring fresh weight 
 - image analysis were really sensitive to proposed parameters + thresholds
 
-[@Delory2017] **Delory et al. 2017. Methods Eco Evol - comparing image analysis softwares**
+## [@Delory2017] 
+
+**Delory et al. 2017. Methods Eco Evol - comparing image analysis softwares**
 - compared IJ_RHIZO and WinRHIZO for root length density and specific root length
 - RLD: “root length per unit volume of soil” 
   - architectural trait: exploring soil for limited resources
@@ -1229,7 +1781,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
     - automatic thresholding
     - resolution of 400 dpi
     
-[@Himmelbauer2004] **Himmelbauer et al. 2004. Plant and Soil - ROOTEDGE software for root traits**
+## [@Himmelbauer2004] 
+
+**Himmelbauer et al. 2004. Plant and Soil - ROOTEDGE software for root traits**
 - compared ROOTEDGE and WinRHIZO softwares; based on different algorithms
 - used roots of cereal crops: Triticum durum and Hordeum vulgare
 - stained the roots to improve the scanning threshold; suggests staining for 5-10 minutes)
@@ -1238,7 +1792,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - estimated root length had a high correlation with actual root length for both softwares
 - stanning does in fact increase the contrast between roots and background 
 
-[@Rose2017] **Rose. 2017. Front Plant Sci - re-evaluating methods to measure root diameter**
+## [@Rose2017] 
+
+**Rose. 2017. Front Plant Sci - re-evaluating methods to measure root diameter**
 - looked two common root traits: specific root length and root tissue density (RTD)
   - based on measurements of length (L) or volume (V) and root dry weight
 - calculation can be simple, but assume that a homogeneous diameter for all roots
@@ -1256,7 +1812,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - assumption that roots are round is correct, but not constant root diameter
 - solution: add up volumes of the different diameter classes
 
-[@Kimura1999] **Kimura. 1998. Plant Soil - root measurement technique to avoid overlapping**
+## [@Kimura1999]
+
+**Kimura. 1998. Plant Soil - root measurement technique to avoid overlapping**
 - previous methods require random overlap, which is time-consuming 
 - count number of pixels of the thinned images and multiply it by a factor
 - freeman chain code; accurate but severely affected by orientation
@@ -1274,13 +1832,17 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - account for overlapping pixels (unlike line-intersect), multiple line objects
 - compromise between small bias + insensitivity to preferential root orientation 
 
-[@Tennant2009] **Tennant. 1975. J Ecol - line-intersect method for root sampling** 
+## [@Tennant2009] 
+
+**Tennant. 1975. J Ecol - line-intersect method for root sampling** 
 - measuring length estimates while controlling for area and length of intersect line
 - uses a grid; I believe this accounts for any overlapping roots; some studies use 2X2cm
 - formula: root length = c X number of intercepts X Grid unit
 - R2 of 0.99 between estimated and actual length (pretty good actually)
 
-[@McCormack2015] **McCormack et al. 2015. New Phytologist - redefining fine roots**
+## [@McCormack2015] 
+
+**McCormack et al. 2015. New Phytologist - redefining fine roots**
 - different approaches to measuring fine roots; traditional, order-based, functional-based
   - all approaches have a < 2mm threshold cutoff
   - traditional: everything grouped together, fast, requires little a priori knowledge, hard to interpret
@@ -1295,7 +1857,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 - diameter cutoffs are OK for within-species comparisons, but not for between-species
 - direct measures of root uptake are rare
 
-[@Poorter2012b] **Poorter and Sack. 2012. Front Plant Sci**
+## [@Poorter2012b] 
+
+**Poorter and Sack. 2012. Front Plant Sci**
 - biomass allocation - “realized distribution of biomass over various plant organs"
 - ignores any carbon lost over respiration, volatilization, or exudation 
 - biomass partitioning depends on available resources aboveground and belowground 
@@ -1332,8 +1896,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - one-harvest experiments - get mass fractions to understand C-budget
   - multiple-harvests - good to compare across species, regardless of plant size 
   
-**Eshel & Beeckman. 2001. Roots: the Hidden Half. Textbook with root methods** 
+## [@Eshel2013]
 
+**Eshel & Beeckman. 20013. Roots: the Hidden Half. Textbook with root methods** 
 - excavation of root systems; quantitative approach allows you to measure: 
   - lengths, diameters, weights volumes, root tips
   - good for small spatial scales
@@ -1369,7 +1934,7 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
     - phenological changes
     - allows investigations in vivo over several vegetation periods + in remote locations
 - rhizotron
-  - Classical Rhizotron
+  - classical Rhizotron
     - root observation laboratory 
     - several glass plates installed on the soil walls on both sides of a tunnel
   - rhizolab
@@ -1477,7 +2042,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 
 # Methodology: greenhouse experiments 
 
-[@Poorter2012] **Poorter et al. 2012. Func Plant Bio - the art of growing plants in greenhouses**
+## [@Poorter2012] 
+
+**Poorter et al. 2012. Func Plant Bio - the art of growing plants in greenhouses**
 - plant biologists rely on experimental setups in which plants are cultivated in labs
 - generalisations across experiments: results are replicable and reproducible
 - a pragmatic guide to capture the minimum level of knowledge of how to grow plants under "ideal" conditions
@@ -1513,7 +2080,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - then you might want to increase sample size
   - simulations show that 12 reps accounts for ~30% of experiments
 
- [@Poorter2012a] **Poorter et al. 2012. Func Plant Bio - pot size does matter**
+## [@Poorter2012a] 
+
+**Poorter et al. 2012. Func Plant Bio - pot size does matter**
 - experiments are often conducted on plants grown in some kind of container
 - pot size seems to have received little consideration; not reported in methods
 - use of small pots in experimental biology
@@ -1530,7 +2099,9 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
 
 # Methodology: statistics
 
-[@Greenland2016] **Greenland et al. 2016. Eur J Epidem - huge misuse of p-values and why**
+## [@Greenland2016] 
+
+**Greenland et al. 2016. Eur J Epidem - huge misuse of p-values and why**
 - huge misuse of statistics among researchers; lead to journals banning some practices
 - solution: basic teaching of general methods needs to be improved
 - stats models - math representation that captures variability; big list of assumptions
@@ -1564,6 +2135,8 @@ collected only leaf and canopy traits (e.g. SLA, LDMC, height and leaf area) tha
   - best way to statistically evaluate multiple studies: do a meta-analysis!
   - any opinions about certainty cannot be inferred only from statistical methods 
   - describe full sequence of events since statistic methods have assumptions
+
+## [@Whittingham2006] 
 
 **Whittingham et al. 2006. J Animal Ecol**
 - ecologists collect lots of possible predictors for a given model. Which ones to choose?

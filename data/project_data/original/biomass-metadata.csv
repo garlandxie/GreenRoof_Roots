@@ -1,0 +1,15 @@
+﻿col_name,description
+typed_by_dry,initials of person who typed the dry aboveground mass data from the sample bag
+typed_by_fresh,initials of person who typed the fresh aboveground mass data from the sample bag
+recorded_by_fresh,initials of person who weighed and recorded the fresh aboveground mass data onto the sample bag
+recorded_by_dry,initials of person who weighed and recorded the dry aboveground mass data onto the sample bag
+recorded_by_ymd,recorded date for root harvesting? (year-month-day format)
+process_date_dry_ymd,recorded date for dry aboveground biomass (year-month-day format)
+process_date_fresh_ymd,recorded date for fresh aboveground biomass (year-month-day format)
+block,"block number from a randomized block design (range: B1, B2, B3, B4, B5 - text characters) "
+pot_ID,genus-species code and individual number for that particular species (range: 1-20 - integers)
+treatment,watering regime treatment: WD (1L once a  week); WW (1 L twice a week)
+above_fresh_g,fresh aboveground biomass (in grams); weighed using a Mettler Toledo AL54 scale
+above_dry_g,dy aboveground biomass (in grams); weighed using a Mettler Toledo AL54 scale
+f>g,sanity check: aboveground fresh biomass should be higher than aboveground dry biomass
+remarks,additional remarks (with initials)

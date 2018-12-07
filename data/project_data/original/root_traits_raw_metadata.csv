@@ -1,0 +1,9 @@
+﻿col_name,range,measurement_units,data_type,description
+block,B1; B2; B3; B4; B5,-,string,block number from a randomized block design
+treatment,WW; WD,-,string,watering regime treatment: WD (1L once a week); WW (1 L twice a week)
+max_rooting_depth,positive continuous,cm,numeric,root functional trait: maximum rooting depth
+mean_root_diameter_mm,positive continuous,mm,numeric,root functional trait: average root diameter
+total_root_length_mm,positive continuous,mm,numeric,total root length; required for specific root length and root length density
+remarks,-,-,string,additional comments
+,,,,
+,,,,

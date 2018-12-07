@@ -1,11 +1,11 @@
 col_name,range,measurement_units,data_type,description
-session,"1,2,3",-,integer,session number 
-month,"7,8,9",-,integer,"month of data collection (7 - Jul, 8 - Aug, 9 - Sep)"
-block,"B1,B2,B3,B4,B5",-,string,block number from a randomized block design 
+session,1;2;3,-,integer,session number 
+month,7;8;9,-,integer,"month of data collection (7 - Jul, 8 - Aug, 9 - Sep)"
+block,B1;B2;B3;B4;B5,-,string,block number from a randomized block design 
 pot-ID,-,-,string,genus-species code and individual number for that particular species
-treatment,"WW, WD",-,string,watering regime treatment: WD (1L once a week); WW (1 L twice a week)
+treatment,WW; WD,-,string,watering regime treatment: WD (1L once a week); WW (1 L twice a week)
 height,positive continuous,cm,numeric,functional trait: maximum plant height; measured using a ruler
 num_leaves,positive integer,-,integer,number of healthy green leaves
 percent_cover,0-100,%,numeric,visual estimation of percent cover 
-repr,"Vg, Fl, Fr, Bd, Sd, Sn",-,string,"reproductive states: vegetative (Vg), flowering (Fl), fruiting (Fr), budding (Bd), seeding (Sd), senescense (Sn)"
+repr,Vg; Fl; Fr; Bd; Sd; Sn,-,string,reproductive states: vegetative (Vg); flowering (Fl); fruiting (Fr); budding (Bd); seeding (Sd); senescense (Sn)
 remarks,-,-,string,additional remarks (with initials)

@@ -1,6 +1,7 @@
 # libraries -----
 library(here)
 library(tidyverse)
+library(visdat)
 
 # import ----
 mrd_df <- readRDS(here("data/project_data/working",
@@ -10,6 +11,10 @@ mrd_df <- readRDS(here("data/project_data/working",
 glimpse(mrd_df)
 head(mrd_df, n = 5)
 tail(mrd_df, n = 5)
+
+# visualize missing data ----
+vis_dat(mrd_df)
+vis_miss(mrd_df)
 
 # check your n's ----
 
@@ -25,9 +30,11 @@ mrd_df %>%
 
 # ???
 
-d <- mrd_df %>%
+mrd_df %>%
   group_by(block, species, treatment) %>%
-  summarize(n = n())
+  summarize(n = n()) %>%
+  pull(n) %>%
+  keep(function(x) x > 2)
 
 # how many modules per treatment per block?
 
@@ -72,22 +79,28 @@ mrd_df %>%
        y = "maximum rooting depth (cm)") +
   theme_minimal()
 
-# analysis of variance -------
+# analysis of variance: spp vs mrd ---------------------------------------------
 
 # NOTE: this is NOT confirmatory data analysis
-# I'm not testing any a priori hypotheses here
-# Just curious if there any differences here and there
 
-# spp vs mrd
 # p-value < 0.001: statistically clear there is interspecific variation
 # hard to say if this would impact the global regression model though
-aov_sp_mrd <- anova(lm(formula = max_root_depth_cm ~ species,
-                       data = mrd_df))
+lm_sp_mrd <- lm(formula = max_root_depth_cm ~ species, data = mrd_df)
+anova(lm_sp_mrd)
 
-# wd/ww vs mrd
+# diagnostic plots
+plot(lm_sp_mrd)
+
+# analysis of variance: wd/ww vs mrd -------------------------------------------
+
+# NOTE: this is NOT confirmatory data analysis
+
 # high p-value: unclear that exp treatments influenced max root depth
 # makes sense - high spatial boundary in "extensive green roof modules"
-aov_wt_mrd <- anova(lm(formula = max_root_depth_cm ~ treatment,
-                       data = mrd_df))
+lm_wt_mrd <- lm(formula = max_root_depth_cm ~ treatment, data = mrd_df)
+anova(lm_wt_mrd)
+
+# diagnostic plots
+plot(lm_wt_mrd) 
 
 

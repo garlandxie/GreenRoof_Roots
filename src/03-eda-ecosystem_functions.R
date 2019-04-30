@@ -2,10 +2,14 @@
 library(here)
 library(tidyverse)
 library(visdat)
+library(lubridate)
 
 # import -----------------------------------------------------------------------
-pot_weights_df <- readRDS(here("data/project_data/working",
+pot_weights_df <- readRDS(here::here("data/project_data/working",
                                 "pot_weight_clean_wide.rds"))
+
+pot_weights_raw <- readRDS(here::here("data/project_data/working", 
+                                "pot_weight_raw.rds"))
 
 # check the packaging ----------------------------------------------------------
 glimpse(pot_weights_df)
@@ -147,4 +151,53 @@ ecosystem_func_df %>%
   facet_wrap(~block, ncol = 5) + 
   labs(x = NULL) + 
   theme(axis.text.x = element_blank())
+
+# plot: time series of ET and capture ------------------------------------------
+
+# create POSiXct date column
+time_series_df <- pot_weights_raw %>%
+  separate(col = "pot_ID", into = c("spp", "ind"), sep = "-") %>%
+  mutate(date = as_date(paste(sample_year, sample_month, sample_day))) %>%
+  select(date, session, block, spp, ind, treatment, period, weight_grams)
+
+# pot-weight over time 
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams)) + 
+  geom_jitter(alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of species composition on pot weight throughout time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams, col = spp)) + 
+  geom_smooth(method = "loess", se = FALSE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of water regime treatment on pot weight throughout time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams, col = treatment)) + 
+  geom_smooth(method = "loess", se = FALSE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") + 
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of block design on pot weight over time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams)) + 
+  geom_jitter(alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE) + 
+  facet_wrap(block~period, ncol = 4) + 
+  coord_flip() + 
+  labs(x = NULL, y = NULL) + 
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        )
+
 

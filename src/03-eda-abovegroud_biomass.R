@@ -1,6 +1,7 @@
 # libraries ----
 library(here)
 library(tidyverse)
+library(visdat)
 
 # import ----
 abov_bm_df <- readRDS(here("data/project_data/working",
@@ -11,6 +12,15 @@ glimpse(abov_bm_df)
 head(abov_bm_df, n = 5)
 tail(abov_bm_df, n = 5)
 
+# data validation ----
+
+
+# visualize missing data ----
+
+# missing values in VAMA + EMNI - the plants died prior to biomass harvest
+vis_dat(abov_bm_df)
+vis_miss(abov_bm_df)
+ 
 # check your n's ----
 
 # how many unique block ID's ?

@@ -61,12 +61,9 @@ EF_df <- pot_weight_clean_wide %>%
 
 # recursively perform left join operations
 # final dataset should have both EF's and candidate traits
-traits_EF_clean_df <- Reduce(left_join,
-                             list(EF_df, 
-                                  rmf_df,
-                                  srl_mrd_df,
-                                  plant_size_df, 
-                                  max_root_depth_df))
+list_dfs <- list(EF_df, rmf_df, srl_mrd_df, plant_size_df, max_root_depth_df)
+
+traits_EF_clean_df <- Reduce(left_join, list_dfs)
 
 
 # save the data ----------------------------------------------------------------

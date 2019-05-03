@@ -20,7 +20,7 @@ ij_rhizo_clean <- ij_rhizo_raw %>%
 
 # split pot-id column to species ID and individual ID
 ij_rhizo_clean <- ij_rhizo_raw %>%
-  separate(col = pot_id, into = c("species", "ind"), sep = "-")
+  separate(col = pot_id, into = c("spp", "ind"), sep = "-")
 
 # convert block and treatment into a factor class
 ij_rhizo_clean <- ij_rhizo_clean %>%
@@ -45,7 +45,7 @@ ij_rhizo_clean <- ij_rhizo_clean %>%
 
 # remove columns
 ij_rhizo_clean <- ij_rhizo_clean %>%
-  select(block, species, ind, treatment, 
+  select(block, spp, ind, treatment, 
          raw_total_length_m, mean_radius_mm, rld)
 
 # save the data! ----

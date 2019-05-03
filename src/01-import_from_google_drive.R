@@ -35,7 +35,7 @@ gs_url(msc_data_link) %>%
 # import - belowground-biomass df ----
 gs_url(msc_data_link) %>%
   gs_read(ws = "below_biomass") %>%
-  saveRDS(file = here("data/project_data/original", 
+  saveRDS(file = here("data/project_data/working", 
                       "belowground_biomass_raw.rds"))
 
 # import - max root depth df ----

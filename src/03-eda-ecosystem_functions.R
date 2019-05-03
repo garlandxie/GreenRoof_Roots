@@ -28,7 +28,8 @@ ecosystem_func_df <- pot_weights_df %>%
          water_loss    = ten_min_delay_T2 - weight_48hr_T4) %>%
   
   # calculate green roof EFS for each module across all sessions
-  group_by(block, species, treatment, ind) %>%
+  group_by(block, spp, treatment, ind) %>%
+  
   summarize(
     total_water_capture = sum(water_capture, na.rm = TRUE),
     total_water_loss    = sum(water_loss, na.rm = TRUE),
@@ -41,39 +42,94 @@ ecosystem_func_df <- pot_weights_df %>%
     n_sessions = n()
   )
 
+# plot: time series of ET and capture ------------------------------------------
+
+# create POSiXct date column
+time_series_df <- pot_weights_raw %>%
+  separate(col = "pot_ID", into = c("spp", "ind"), sep = "-") %>%
+  mutate(date = as_date(paste(sample_year, sample_month, sample_day))) %>%
+  select(date, session, block, spp, ind, treatment, period, weight_grams)
+
+# pot-weight over time 
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams)) + 
+  geom_jitter(alpha = 0.01) + 
+  geom_smooth(method = "loess", se = TRUE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of species composition on pot weight throughout time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams, col = spp)) + 
+  geom_smooth(method = "loess", se = TRUE, show.legend = FALSE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of water regime treatment on pot weight throughout time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams, col = treatment)) + 
+  geom_smooth(method = "loess", se = TRUE) + 
+  facet_wrap(~period, ncol = 4) +
+  labs(x = "date", 
+       y = "pot weight (gm)") + 
+  theme(axis.text.x = element_text(angle = 90))
+
+# influence of block design on pot weight over time
+time_series_df %>%
+  ggplot(aes(x = date, y = weight_grams)) + 
+  geom_jitter(alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE) + 
+  facet_wrap(block~period, ncol = 4) + 
+  coord_flip() + 
+  labs(x = NULL, y = NULL) + 
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+  )
 # plot: influence of species composition on ecosystem functions ----------------
 
 # avg water capture
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, avg_water_capture),
+  ggplot(aes(x = fct_reorder(spp, avg_water_capture),
              y = avg_water_capture)) + 
   geom_boxplot() +
   coord_flip() + 
-  facet_wrap(~treatment)
+  facet_wrap(~treatment) +
+  labs(x = "Average Water Capture",
+       y = "Spp")
 
 # avg water loss 
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, avg_water_loss),
+  ggplot(aes(x = fct_reorder(spp, avg_water_loss),
              y = avg_water_capture)) + 
   geom_boxplot() +
   coord_flip() + 
-  facet_wrap(~treatment)
+  facet_wrap(~treatment) +
+  labs(x = "Average Water Loss",
+       y = "Spp")
 
 # total water capture
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, total_water_capture),
+  ggplot(aes(x = fct_reorder(spp, total_water_capture),
              y = total_water_capture)) + 
   geom_boxplot() +
   coord_flip() + 
-  facet_wrap(~treatment)
+  facet_wrap(~treatment) +
+  labs(x = "Total Water Capture",
+       y = "Spp")
 
 # total water loss - applied log transform to show the trends more clearly
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, log(total_water_loss)),
+  ggplot(aes(x = fct_reorder(spp, log(total_water_loss)),
              y = log(total_water_loss))) + 
   geom_boxplot() +
   coord_flip() + 
-  facet_wrap(~treatment)
+  facet_wrap(~treatment) + 
+  labs(x = "Log(Total Water Loss)",
+       y = "Spp")
 
 # plot: relationship between ecosystem functions -------------------------------
 
@@ -115,7 +171,7 @@ ecosystem_func_df %>%
 
 # total water capture
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, total_water_capture), 
+  ggplot(aes(x = fct_reorder(spp, total_water_capture), 
              y = total_water_capture)) +
   geom_boxplot() + 
   coord_flip() + 
@@ -124,7 +180,7 @@ ecosystem_func_df %>%
 
 # total water loss
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, total_water_loss), 
+  ggplot(aes(x = fct_reorder(spp, total_water_loss), 
              y = total_water_loss)) +
   geom_boxplot() + 
   coord_flip() + 
@@ -134,7 +190,7 @@ ecosystem_func_df %>%
 
 # avg water loss 
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, avg_water_loss), 
+  ggplot(aes(x = fct_reorder(spp, avg_water_loss), 
              y = avg_water_loss)) +
   geom_boxplot() + 
   coord_flip() + 
@@ -144,7 +200,7 @@ ecosystem_func_df %>%
 
 # avg water capture
 ecosystem_func_df %>%
-  ggplot(aes(x = fct_reorder(species, avg_water_capture), 
+  ggplot(aes(x = fct_reorder(spp, avg_water_capture), 
              y = avg_water_capture)) +
   geom_boxplot() + 
   coord_flip() + 
@@ -152,52 +208,5 @@ ecosystem_func_df %>%
   labs(x = NULL) + 
   theme(axis.text.x = element_blank())
 
-# plot: time series of ET and capture ------------------------------------------
-
-# create POSiXct date column
-time_series_df <- pot_weights_raw %>%
-  separate(col = "pot_ID", into = c("spp", "ind"), sep = "-") %>%
-  mutate(date = as_date(paste(sample_year, sample_month, sample_day))) %>%
-  select(date, session, block, spp, ind, treatment, period, weight_grams)
-
-# pot-weight over time 
-time_series_df %>%
-  ggplot(aes(x = date, y = weight_grams)) + 
-  geom_jitter(alpha = 0.1) + 
-  geom_smooth(method = "loess", se = FALSE) + 
-  facet_wrap(~period, ncol = 4) +
-  labs(x = "date", 
-       y = "pot weight (gm)") +
-  theme(axis.text.x = element_text(angle = 90))
-
-# influence of species composition on pot weight throughout time
-time_series_df %>%
-  ggplot(aes(x = date, y = weight_grams, col = spp)) + 
-  geom_smooth(method = "loess", se = FALSE) + 
-  facet_wrap(~period, ncol = 4) +
-  labs(x = "date", 
-       y = "pot weight (gm)") +
-  theme(axis.text.x = element_text(angle = 90))
-
-# influence of water regime treatment on pot weight throughout time
-time_series_df %>%
-  ggplot(aes(x = date, y = weight_grams, col = treatment)) + 
-  geom_smooth(method = "loess", se = FALSE) + 
-  facet_wrap(~period, ncol = 4) +
-  labs(x = "date", 
-       y = "pot weight (gm)") + 
-  theme(axis.text.x = element_text(angle = 90))
-
-# influence of block design on pot weight over time
-time_series_df %>%
-  ggplot(aes(x = date, y = weight_grams)) + 
-  geom_jitter(alpha = 0.1) + 
-  geom_smooth(method = "loess", se = FALSE) + 
-  facet_wrap(block~period, ncol = 4) + 
-  coord_flip() + 
-  labs(x = NULL, y = NULL) + 
-  theme(axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        )
 
 

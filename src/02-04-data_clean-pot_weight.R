@@ -28,14 +28,14 @@ pot_weight_clean <- pot_weight_clean %>%
 
 # separate
 pot_weight_clean <- pot_weight_clean %>%
-  separate(col = "pot_ID", into = c("species", "ind"), sep = "-")
+  separate(col = "pot_ID", into = c("spp", "ind"), sep = "-")
 
 # convert into numeric values
 pot_weight_clean <- pot_weight_clean %>%
   mutate(ind = as.numeric(ind))
 
 pot_weight_clean <- pot_weight_clean %>%
-  arrange(session, block, species, ind, treatment, period)
+  arrange(session, block, spp, ind, treatment, period)
 
 # spread -----------------------------------------------------------------------
 

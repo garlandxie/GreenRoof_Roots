@@ -20,7 +20,7 @@ max_root_depth_clean <- max_root_depth_raw %>%
 
 # split pot-id column to species ID and individual ID
 max_root_depth_clean <- max_root_depth_clean %>%
-  separate(col = pot_ID, into = c("species", "ind"), sep = "-")
+  separate(col = pot_ID, into = c("spp", "ind"), sep = "-")
 
 # convert block and treatment into a factor class
 max_root_depth_clean <- max_root_depth_clean %>%
@@ -34,7 +34,7 @@ max_root_depth_clean <- max_root_depth_clean %>%
 
 # select appropriate cols 
 max_root_depth_clean <- max_root_depth_clean %>%
-  select(block, treatment, species, ind, max_root_depth_cm)
+  select(block, treatment, spp, ind, max_root_depth_cm)
 
 # save the data! ----
 saveRDS(max_root_depth_clean, 

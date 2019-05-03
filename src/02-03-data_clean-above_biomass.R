@@ -20,7 +20,7 @@ above_biomass_clean <- above_biomass_raw %>%
 
 # split pot-id column to species ID and individual ID
 above_biomass_clean <- above_biomass_clean %>%
-  separate(col = pot_ID, into = c("species", "ind"), sep = "-")
+  separate(col = pot_ID, into = c("spp", "ind"), sep = "-")
 
 # convert appropriate cols into numeric values
 above_biomass_clean <- above_biomass_clean %>%
@@ -29,7 +29,7 @@ above_biomass_clean <- above_biomass_clean %>%
 
 # select appropriate cols 
 above_biomass_clean <- above_biomass_clean %>%
-  select(block, treatment, species, ind, above_dry_g)
+  select(block, treatment, spp, ind, above_dry_g)
 
 # save the data! ----
 saveRDS(above_biomass_clean, 

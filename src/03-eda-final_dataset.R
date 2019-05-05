@@ -1,11 +1,13 @@
 # libraries --------------------------------------------------------------------
 library(here)
+library(plyr)
 library(dplyr)
 library(visdat)
-library(GGally)
+library(tidyr)
+library(ggbiplot)
 
-# import -----------------------------------------------------------------------
-traits_EF_clean_df <- readRDS(here("data/project_data/final",
+# import ---------------------------------------------
+traits_EF_clean_df <- readRDS(here::here("data/project_data/final",
                                    "traits_EF_clean_df.rds"))
 
 # check packaging --------------------------------------------------------------
@@ -56,3 +58,26 @@ pairs(corr_matrix_wd)
 # pairwise correlation matrix for WD: use Kendall's tau correlation
 cor(corr_matrix_wd, use = "complete.obs", method = "kendall")
 
+# pca --------------------------------------------------------------------------
+
+# WD
+pca_matrix_wd <- traits_EF_clean_df %>%
+  ungroup() %>%
+  filter(treatment == "WD") %>%
+  select(rmf, srl, rld, max_root_depth_cm, mean_radius_mm, plant_size) %>%
+  drop_na %>% # complete cases
+  prcomp(center = TRUE, scale = TRUE)
+
+summary(pca_matrix_wd) # info on cumulative proportion
+ggbiplot(pca_matrix_wd) # plot loadings
+
+# WW
+pca_matrix_ww <- traits_EF_clean_df %>%
+  ungroup() %>%
+  filter(treatment == "WW") %>%
+  select(rmf, srl, rld, max_root_depth_cm, mean_radius_mm, plant_size) %>%
+  drop_na %>% # complete cases
+  prcomp(center = TRUE, scale = TRUE)
+
+summary(pca_matrix_ww)  # info on cumulative proportion 
+ggbiplot(pca_matrix_ww) # plot loadings

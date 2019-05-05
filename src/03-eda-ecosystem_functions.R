@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(visdat)
 library(lubridate)
+library(lmodel2)
 
 # import -----------------------------------------------------------------------
 pot_weights_df <- readRDS(here::here("data/project_data/working",
@@ -41,6 +42,7 @@ ecosystem_func_df <- pot_weights_df %>%
     # number of unique sessions: should be 12 for WD and 20 for WW
     n_sessions = n()
   )
+
 
 # plot: time series of ET and capture ------------------------------------------
 
@@ -208,5 +210,21 @@ ecosystem_func_df %>%
   labs(x = NULL) + 
   theme(axis.text.x = element_blank())
 
+# sma --------------------------------------------------------------------------
+
+# NOTE: this is NOT confirmatory data analysis
+# water capture and ET should be a circular relationship
+# so a standard major axis (SMA) regression should be done here 
+
+# split datasets 
+EF_WW <- ecosystem_func_df %>%
+  filter(treatment == "WD") 
+
+EF_WD <- ecosystem_func_df %>%
+  filter(treatment == "WD")
+
+# sma regression
+lmodel2(formula = total_water_capture ~ total_water_loss, data = EF_WW)
+lmodel2(formula = total_water_capture ~ total_water_loss, data = EF_WD)
 
 

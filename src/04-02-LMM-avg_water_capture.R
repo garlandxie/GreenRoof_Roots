@@ -138,3 +138,6 @@ r1Var_WD / (r1Var_WD + residVar_WD)
 confint.merMod(lmm_avg_ret_WD, method = "profile")
 confint.merMod(lmm_avg_ret_WW, method = "profile")
 
+# save the data ----------------------------------------------------------------
+saveRDS(lmm_avg_ret_WD, here("data/project_data/final", "lmm_avg_ret_WD.rds"))
+saveRDS(lmm_avg_ret_WW, here("data/project_data/final", "lmm_avg_ret_WW.rds"))

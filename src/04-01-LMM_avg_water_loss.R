@@ -4,8 +4,7 @@ library(lme4)
 library(here)
 library(dplyr)
 library(piecewiseSEM)
-library(ggplot2)
-library(visreg)
+library(tidyr)
 
 # import -----------------------------------------------------------------------
 traits_EF_clean_df <- readRDS(here("data/project_data/final",
@@ -18,32 +17,36 @@ tail(traits_EF_clean_df, n = 5)
 
 # split dataset ----------------------------------------------------------------
 traits_EF_WW <- traits_EF_clean_df %>% 
-  filter(treatment == "WW") 
+  filter(treatment == "WW") %>%
+  drop_na()
 
 traits_EF_WD <- traits_EF_clean_df %>% 
-  filter(treatment == "WD")
+  filter(treatment == "WD") %>%
+  drop_na()
 
 # model fitting: avg water capture ---------------------------------------------
 
 # WW 
 lmm_avg_loss_WW <- lmer(
   formula = avg_water_loss ~ # response var
-    scale(srl) + scale(mean_radius_mm) + scale(rld) + 
-    scale(rmf) + scale(max_root_depth_cm) + # fixed vars
+    scale(srl) + scale(mean_radius_mm) + scale(rld) +
+    scale(max_root_depth_cm) + # fixed vars
     scale(plant_size) + # covariate var 
     (1|block), # random vars
   REML = TRUE, # restricted maximum-likelihood (unbiased estimator)
-  data = traits_EF_WW)
+  data = traits_EF_WW,
+  na.action = "na.fail")
 
 # WD
 lmm_avg_loss_WD <- lmer(
   formula =  avg_water_loss ~ # response var
     scale(srl) + scale(mean_radius_mm) + scale(rld) + 
-    scale(rmf) + scale(max_root_depth_cm) + # fixed vars
+    scale(max_root_depth_cm) + # fixed vars
     scale(plant_size) + # covariate var 
     (1|block), # random vars
   REML = TRUE, # restricted maximum-likelihood (unbiased estimator)
-  data = traits_EF_WD)
+  data = traits_EF_WD,
+  na.action = "na.fail")
 
 # model summary ----------------------------------------------------------------
 
@@ -137,16 +140,11 @@ r1Var_WD / (r1Var_WD + residVar_WD)
 confint.merMod(lmm_avg_loss_WD, method = "profile")
 confint.merMod(lmm_avg_loss_WW, method = "profile")
 
-# partial regression plots -----------------------------------------------------
+# save the data ----------------------------------------------------------------
+saveRDS(lmm_avg_loss_WD, here("data/project_data/final", "lmm_avg_loss_WD.rds"))
+saveRDS(lmm_avg_loss_WW, here("data/project_data/final", "lmm_avg_loss_WW.rds"))
 
-# partial residual plots for LMM with WD treatment 
-# only "significantly clear" terms are shown
-visreg(lmm_avg_loss_WD, "srl", partial = TRUE)
-visreg(lmm_avg_loss_WD, "rld", partial = TRUE)
-visreg(lmm_avg_loss_WD, "rmf", partial = TRUE)
 
-# partial residual plots for LMM with WW treatment
-# only "significantly clear" terms are shown
-visreg(lmm_avg_loss_WW, "mean_radius_mm", partial = TRUE)
-%>% visreg(lmm_avg_loss_WW, "rmf", partial = TRUE)
-visreg(lmm_avg_loss_WW, "plant_size", partial = TRUE)
+
+
+

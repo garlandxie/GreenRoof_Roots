@@ -6,6 +6,7 @@ library(dplyr)
 library(piecewiseSEM)
 library(ggplot2)
 library(visreg)
+library(tidyr)
 
 # import -----------------------------------------------------------------------
 traits_EF_clean_df <- readRDS(here("data/project_data/final",
@@ -135,17 +136,3 @@ r1Var_WD / (r1Var_WD + residVar_WD)
 # calcuate profile 95% CI 
 confint.merMod(lmm_total_ret_WD, method = "profile")
 confint.merMod(lmm_total_ret_WW, method = "profile")
-
-# partial regression plots -----------------------------------------------------
-
-# partial residual plots for LMM with WD treatment 
-# only "significantly clear" terms are shown
-visreg(lmm_total_ret_WD, "srl", partial = TRUE)
-visreg(lmm_total_ret_WD, "rld", partial = TRUE)
-visreg(lmm_total_ret_WD, "rmf", partial = TRUE)
-
-# partial residual plots for LMM with WW treatment
-# only "significantly clear" terms are shown
-visreg(lmm_total_ret_WW, "mean_radius_mm", partial = TRUE)
-visreg(lmm_total_ret_WW, "rmf", partial = TRUE)
-visreg(lmm_total_ret_WW, "plant_size", partial = TRUE)

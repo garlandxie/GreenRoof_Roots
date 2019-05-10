@@ -31,7 +31,7 @@ lmm_total_ret_WD %>%
          width = 6.8, height = 4.94, units = "in",
          device = "png")
 
-lmm_avg_water_ret_WW %>%
+lmm_avg_total_ret_WW %>%
   
   # convert lm object into a tibble
   tidy() %>%

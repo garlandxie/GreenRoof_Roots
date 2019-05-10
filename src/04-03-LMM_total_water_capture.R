@@ -141,5 +141,5 @@ confint.merMod(lmm_total_ret_WW, method = "profile")
 saveRDS(lmm_total_ret_WD, here("data/project_data/final", 
                                "lmm_total_ret_WD.rds"))
 
-saveRDS(lmm_total_ret_W, here("data/project_data/final", 
+saveRDS(lmm_total_ret_WW, here("data/project_data/final", 
                                "lmm_total_ret_WW.rds"))

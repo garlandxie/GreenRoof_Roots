@@ -136,3 +136,10 @@ r1Var_WD / (r1Var_WD + residVar_WD)
 # calcuate profile 95% CI 
 confint.merMod(lmm_total_ret_WD, method = "profile")
 confint.merMod(lmm_total_ret_WW, method = "profile")
+
+# save the data ----------------------------------------------------------------
+saveRDS(lmm_total_ret_WD, here("data/project_data/final", 
+                               "lmm_total_ret_WD.rds"))
+
+saveRDS(lmm_total_ret_W, here("data/project_data/final", 
+                               "lmm_total_ret_WW.rds"))

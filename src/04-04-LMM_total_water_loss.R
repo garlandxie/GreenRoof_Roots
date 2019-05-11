@@ -6,6 +6,7 @@ library(dplyr)
 library(piecewiseSEM)
 library(ggplot2)
 library(visreg)
+library(tidyr)
 
 # import -----------------------------------------------------------------------
 traits_EF_clean_df <- readRDS(here("data/project_data/final",
@@ -18,10 +19,12 @@ tail(traits_EF_clean_df, n = 5)
 
 # split dataset ----------------------------------------------------------------
 traits_EF_WW <- traits_EF_clean_df %>% 
-  filter(treatment == "WW") 
+  filter(treatment == "WW") %>%
+  drop_na()
 
 traits_EF_WD <- traits_EF_clean_df %>% 
-  filter(treatment == "WD")
+  filter(treatment == "WD") %>%
+  drop_na()
 
 # model fitting: avg water capture ---------------------------------------------
 
@@ -29,7 +32,7 @@ traits_EF_WD <- traits_EF_clean_df %>%
 lmm_total_ET_WW <- lmer(
   formula = total_water_loss ~ # response var
     scale(srl) + scale(mean_radius_mm) + scale(rld) + 
-    scale(rmf) + scale(max_root_depth_cm) + # fixed vars
+    scale(max_root_depth_cm) + # fixed vars
     scale(plant_size) + # covariate var 
     (1|block), # random vars
   REML = TRUE, # restricted maximum-likelihood (unbiased estimator)
@@ -39,7 +42,7 @@ lmm_total_ET_WW <- lmer(
 lmm_total_ET_WD <- lmer(
   formula =  total_water_loss ~ # response var
     scale(srl) + scale(mean_radius_mm) + scale(rld) + 
-    scale(rmf) + scale(max_root_depth_cm) + # fixed vars
+    scale(max_root_depth_cm) + # fixed vars
     scale(plant_size) + # covariate var 
     (1|block), # random vars
   REML = TRUE, # restricted maximum-likelihood (unbiased estimator)
@@ -136,16 +139,5 @@ r1Var_WD / (r1Var_WD + residVar_WD)
 confint.merMod(lmm_total_ET_WD, method = "profile")
 confint.merMod(lmm_total_ET_WW, method = "profile")
 
-# partial regression plots -----------------------------------------------------
 
-# partial residual plots for LMM with WD treatment 
-# only "significantly clear" terms are shown
-visreg(lmm_total_ET_WD, "srl", partial = TRUE)
-visreg(lmm_total_ET_WD, "rld", partial = TRUE)
-visreg(lmm_total_ET_WD, "rmf", partial = TRUE)
 
-# partial residual plots for LMM with WW treatment
-# only "significantly clear" terms are shown
-visreg(lmm_total_ET_WW, "mean_radius_mm", partial = TRUE)
-visreg(lmm_total_ET_WW, "rmf", partial = TRUE)
-visreg(lmm_total_ET_WW, "plant_size", partial = TRUE)

@@ -30,7 +30,6 @@ pca_matrix_ww <- traits_EF_clean_df %>%
 summary(pca_matrix_ww)  # info on cumulative proportion 
 
 # save the data ----------------------------------------------------------------
-pca_matrix_WD$x$PC1
 saveRDS(pca_matrix_wd, here("data/project_data/final", "pca_matrix_WD.rds"))
 saveRDS(pca_matrix_ww, here("data/project_data/final", "pca_matrix_WW.rds"))
 

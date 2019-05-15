@@ -5,7 +5,6 @@ library(here)
 library(dplyr)
 library(ggplot2)
 library(cowplot)
-library(forcats)
 
 # import -----------------------------------------------------------------------
 lmm_avg_water_loss_WD <- readRDS(here("data/project_data/final",

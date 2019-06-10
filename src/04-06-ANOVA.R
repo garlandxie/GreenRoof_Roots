@@ -5,7 +5,6 @@ library(emmeans)
 library(tidyr)
 library(dplyr)
 library(ggplot2)
-library(forcats)
 
 # import -----------------------------------------------------------------------
 df <- readRDS(here::here("data/project_data/final","traits_EF_clean_df.rds"))
@@ -20,7 +19,6 @@ spp_list <- c("VAMA", "EMNI", "DASP", "SITR",
 df1 <- df %>%
   ungroup() %>%
   filter(spp %in% spp_list) %>%
-  mutate(spp = factor(spp)) %>%
   drop_na() %>%
   select(block, spp, treatment, ind, 
          avg_water_capture, avg_water_loss, 
@@ -30,7 +28,6 @@ df1 <- df %>%
 df2 <- df %>%
   ungroup() %>%
   filter(spp == "SC") %>%
-  mutate(spp = factor(spp)) %>%
   select(block, spp, treatment, ind, 
          avg_water_capture, avg_water_loss, 
          total_water_capture, total_water_loss)
@@ -43,7 +40,22 @@ clean_df <- rbind(df1, df2)
 # two-way ANOVA with an unbalanced design: avg_ET_aov
 # factors: species identity (eg. SOBI) and watering regime treatments (WW, WD)
 # log-transformation on dependent variable to stabilize variance
-avg_ET_aov <- lm(log(avg_water_loss) ~ spp + treatment, data = clean_df)
+avg_ET_aov <- clean_df %>%
+  mutate(spp = case_when(
+    spp  == "SOBI" ~ "Solidago Bicolor",
+    spp  == "SYNO" ~ "Symphyotrichum novae-angliae",
+    spp  == "PLMA" ~ "Plantago maritima",
+    spp  == "SEAC" ~ "Sedum acre",
+    spp  == "SEAL" ~ "Sedum album",
+    spp  == "SESE" ~ "Sedum sexangular",
+    spp  == "VAMA" ~ "Vaccinium macrocarpon",
+    spp  == "EMNI" ~ "Empetrum nigrum",
+    spp  == "DASP" ~ "Danthonia spicata",
+    spp  == "SITR" ~ "Sibbaldiopsis tridentata",
+    spp  == "SC"   ~ "Soil-Only",
+    TRUE ~ spp),
+    spp = fct_reorder(spp, avg_water_loss))  %>%
+  lm(log(avg_water_capture) ~ spp + treatment, data = .)
 
 # dianostic plots: 
 # (1) residuals vs fitted
@@ -66,14 +78,31 @@ ref_grid(avg_ET_aov)@grid
 
 # multiple pairwise comparisons using Tukey HSD test
 # shows letters for plotting purposes 
-CLD(avg_ET_lsm, method = "pairwise", adjust = "tukey")
+plot(avg_ET_lsm, comparison = TRUE, 
+     type = "response", alpha = 0.05, adjust = "tukey") +
+  labs(y = NULL, x = "Average ET")
 
 # ANOVA: avg water capture -----------------------------------------------------
 
 # two-way ANOVA with an unbalanced design: avg_ET_aov
 # factors: species identity (eg. SOBI) and watering regime treatments (WW, WD)
 # log-transformation on dependent variable to stabilize variance
-avg_ret_aov <- lm(log(avg_water_capture) ~ spp + treatment, data = clean_df)
+avg_ret_aov <- clean_df %>%
+  mutate(spp = case_when(
+           spp  == "SOBI" ~ "Solidago Bicolor",
+           spp  == "SYNO" ~ "Symphyotrichum novae-angliae",
+           spp  == "PLMA" ~ "Plantago maritima",
+           spp  == "SEAC" ~ "Sedum acre",
+           spp  == "SEAL" ~ "Sedum album",
+           spp  == "SESE" ~ "Sedum sexangular",
+           spp  == "VAMA" ~ "Vaccinium macrocarpon",
+           spp  == "EMNI" ~ "Empetrum nigrum",
+           spp  == "DASP" ~ "Danthonia spicata",
+           spp  == "SITR" ~ "Sibbaldiopsis tridentata",
+           spp  == "SC"   ~ "Soil-Only",
+           TRUE ~ spp),
+         spp = fct_reorder(spp, avg_water_capture))  %>%
+  lm(log(avg_water_capture) ~ spp + treatment, data = .)
 
 # dianostic plots: 
 # (1) residuals vs fitted
@@ -91,16 +120,35 @@ Anova(avg_ret_aov, type = "II")
 # estimated marginal means (least square means): avg_ET_lsm
 avg_ret_lsm <- lsmeans(avg_ret_aov, specs = "spp", by = "treatment")
 
-# multiple pairwise comparisons using Tukey HSD test
-# shows letters for plotting purposes 
-CLD(avg_ret_lsm, method = "pairwise", adjust = "tukey")
+# pairwise compariso plots
+# avoids the common use of a statistical significance threshold
+# authors also want users to avoid CLD
+plot(avg_ret_lsm, comparison = TRUE, 
+     type = "response", alpha = 0.05, adjust = "tukey") +
+  labs(y = NULL, x = "Average Stormwater Capture")
+
 
 # ANOVA: total water capture ---------------------------------------------------
 
 # two-way ANOVA with an unbalanced design: avg_ET_aov
 # factors: species identity (eg. SOBI) and watering regime treatments (WW, WD)
 # log-transformation on dependent variable to stabilize variance
-total_ret_aov <- lm(log(total_water_capture) ~ spp + treatment, data = clean_df)
+total_ret_aov <- clean_df %>%
+  mutate(spp = case_when(
+    spp  == "SOBI" ~ "Solidago Bicolor",
+    spp  == "SYNO" ~ "Symphyotrichum novae-angliae",
+    spp  == "PLMA" ~ "Plantago maritima",
+    spp  == "SEAC" ~ "Sedum acre",
+    spp  == "SEAL" ~ "Sedum album",
+    spp  == "SESE" ~ "Sedum sexangular",
+    spp  == "VAMA" ~ "Vaccinium macrocarpon",
+    spp  == "EMNI" ~ "Empetrum nigrum",
+    spp  == "DASP" ~ "Danthonia spicata",
+    spp  == "SITR" ~ "Sibbaldiopsis tridentata",
+    spp  == "SC"   ~ "Soil-Only",
+    TRUE ~ spp),
+    spp = fct_reorder(spp, total_water_capture))  %>%
+  lm(log(total_water_capture) ~ spp + treatment, data = .)
 
 # dianostic plots: 
 # (1) residuals vs fitted
@@ -120,14 +168,33 @@ total_ret_lsm <- lsmeans(total_ret_aov, specs = "spp", by = "treatment")
 
 # multiple pairwise comparisons using Tukey HSD test
 # shows letters for plotting purposes 
-CLD(total_ret_lsm, method = "pairwise", adjust = "tukey")
+plot(total_ret_lsm, comparison = TRUE, 
+     type = "response", alpha = 0.05, adjust = "tukey") +
+  labs(y = NULL, x = "Average Stormwater Capture")
+
 
 # ANOVA: total water loss -------------------------------------------------------
 
-# two-way ANOVA with an unbalanced design: avg_ET_aov
+# two-way ANOVA with an unbalanced design: total_ET_aov
 # factors: species identity (eg. SOBI) and watering regime treatments (WW, WD)
 # log-transformation on dependent variable to stabilize variance
-total_ET_aov <- lm(log(total_water_loss) ~ spp + treatment, data = clean_df)
+
+total_ET_aov <- clean_df %>%
+  mutate(spp = case_when(
+    spp  == "SOBI" ~ "Solidago Bicolor",
+    spp  == "SYNO" ~ "Symphyotrichum novae-angliae",
+    spp  == "PLMA" ~ "Plantago maritima",
+    spp  == "SEAC" ~ "Sedum acre",
+    spp  == "SEAL" ~ "Sedum album",
+    spp  == "SESE" ~ "Sedum sexangular",
+    spp  == "VAMA" ~ "Vaccinium macrocarpon",
+    spp  == "EMNI" ~ "Empetrum nigrum",
+    spp  == "DASP" ~ "Danthonia spicata",
+    spp  == "SITR" ~ "Sibbaldiopsis tridentata",
+    spp  == "SC"   ~ "Soil-Only",
+    TRUE ~ spp),
+    spp = fct_reorder(spp, total_water_loss))  %>%
+  lm(log(total_water_loss) ~ spp + treatment, data = .)
 
 # dianostic plots: 
 # (1) residuals vs fitted
@@ -147,5 +214,12 @@ total_ET_lsm <- lsmeans(total_ET_aov, specs = "spp", by = "treatment")
 
 # multiple pairwise comparisons using Tukey HSD test
 # shows letters for plotting purposes 
-CLD(total_ET_lsm, method = "pairwise", adjust = "tukey")
+plot(total_ET_lsm, 
+     comparison = TRUE, 
+     type = "response", 
+     alpha = 0.05, 
+     adjust = "tukey") +
+  
+  labs(y = NULL,
+       x = "Average Stormwater Capture")
 
